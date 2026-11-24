@@ -108,6 +108,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <meta name="naver-site-verification" content="59b3338af0d78bc1401278938181f424273ebd56" />
         <link rel="help" type="text/plain" title="AI & LLMs Guide (llms.txt)" href="https://lotto.animap.co.kr/llms.txt" />
         <link rel="preconnect" href="https://xdworld.vworld.kr" crossOrigin="anonymous" />
         <link
