@@ -55,16 +55,17 @@ export function generateSingleGame(
   storeName?: string,
   storeCount: number = 1,
   fixedNums: number[] = [],
-  excludedNums: number[] = []
+  excludedNums: number[] = [],
+  sampleCount: number = 50
 ): number[] {
   const excludedSet = new Set(excludedNums);
   const baseFixed = fixedNums.filter((n) => !excludedSet.has(n)).slice(0, 5);
 
-  // 가중치 계산 (AI 모드용)
+  // 가중치 계산 (1등 패턴 모드용: 선택한 최근 N회차 기반)
   const counts: Record<number, number> = {};
   for (let i = 1; i <= 45; i++) counts[i] = 1;
-  if (mode === 'ai' && history.length > 0) {
-    history.slice(0, 50).forEach((draw) => {
+  if ((mode === 'pattern' || mode === 'ai') && history.length > 0) {
+    history.slice(0, sampleCount).forEach((draw) => {
       draw.numbers.forEach((num) => {
         counts[num] = (counts[num] || 1) + 1;
       });
@@ -83,12 +84,12 @@ export function generateSingleGame(
     const availablePool: number[] = [];
     for (let i = 1; i <= 45; i++) {
       if (!selected.has(i) && !excludedSet.has(i)) {
-        const w = mode === 'ai' ? Math.max(1, counts[i] || 1) : 1;
+        const w = mode === 'pattern' || mode === 'ai' ? Math.max(1, counts[i] || 1) : 1;
         for (let k = 0; k < w; k++) availablePool.push(i);
       }
     }
 
-    // 패턴 모드: 대역 분산 시도
+    // 1등 패턴 모드: 번호대별 분산 + 통계 가중치 결합
     if (mode === 'pattern' && selected.size < 6) {
       const zones = [
         [1, 10],
@@ -99,9 +100,12 @@ export function generateSingleGame(
       ];
       for (const [min, max] of zones) {
         if (selected.size >= 6) break;
-        const zoneCandidates = [];
+        const zoneCandidates: number[] = [];
         for (let n = min; n <= max; n++) {
-          if (!selected.has(n) && !excludedSet.has(n)) zoneCandidates.push(n);
+          if (!selected.has(n) && !excludedSet.has(n)) {
+            const w = Math.max(1, counts[n] || 1);
+            for (let k = 0; k < w; k++) zoneCandidates.push(n);
+          }
         }
         if (zoneCandidates.length > 0) {
           selected.add(zoneCandidates[Math.floor(Math.random() * zoneCandidates.length)]);
@@ -138,7 +142,8 @@ export function generateLottoSet(
   storeName?: string,
   storeCount: number = 1,
   fixedNums: number[] = [],
-  excludedNums: number[] = []
+  excludedNums: number[] = [],
+  sampleCount: number = 50
 ): number[][] {
   const games: number[][] = [];
   for (let i = 0; i < 5; i++) {
@@ -149,7 +154,8 @@ export function generateLottoSet(
         storeName ? `${storeName}_${i}` : undefined,
         storeCount,
         fixedNums,
-        excludedNums
+        excludedNums,
+        sampleCount
       )
     );
   }

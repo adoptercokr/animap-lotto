@@ -37,9 +37,10 @@ export default function LottoGenerator({
   // 5게임 (각 게임은 0~6개 숫자 배열)
   const [games, setGames] = useState<number[][]>([[], [], [], [], []]);
   const [gameTypes, setGameTypes] = useState<string[]>(['자동', '자동', '자동', '자동', '자동']);
-  const [activeMode, setActiveMode] = useState<'stats' | 'pattern' | 'store' | 'manual'>(
-    linkedStore ? 'store' : 'stats'
+  const [activeMode, setActiveMode] = useState<'auto' | 'pattern' | 'store' | 'manual'>(
+    linkedStore ? 'store' : 'auto'
   );
+  const [patternSampleCount, setPatternSampleCount] = useState<number>(50); // 1등 패턴 기본 50회차
   const [activeRow, setActiveRow] = useState<number>(0); // 직접 찍을 때 선택된 줄 (0~4 = A~E)
   const [savedTickets, setSavedTickets] = useState<SavedTicket[]>([]);
   const [isDownloading, setIsDownloading] = useState(false);
@@ -65,7 +66,7 @@ export default function LottoGenerator({
       setActiveMode('store');
       handleGenerateAll('store', linkedStore);
     } else if (games[0].length === 0) {
-      handleGenerateAll('stats', null);
+      handleGenerateAll('auto', null);
     }
   }, [linkedStore]);
 
@@ -103,16 +104,21 @@ export default function LottoGenerator({
 
   // 전체 5게임 새로 뽑기
   const handleGenerateAll = (
-    mode: 'stats' | 'pattern' | 'store',
-    targetStore: LottoStore | null = linkedStore
+    mode: 'auto' | 'pattern' | 'store',
+    targetStore: LottoStore | null = linkedStore,
+    sampleOverride?: number
   ) => {
     setActiveMode(mode);
-    const engineMode = mode === 'stats' ? 'ai' : mode === 'pattern' ? 'pattern' : 'store';
+    const useSamples = sampleOverride ?? patternSampleCount;
+    const engineMode = mode === 'auto' ? 'random' : mode === 'pattern' ? 'pattern' : 'store';
     const newGames = generateLottoSet(
       engineMode,
       historyData,
       targetStore?.name,
-      targetStore?.cnt || 1
+      targetStore?.cnt || 1,
+      [],
+      [],
+      useSamples
     );
     setGames(newGames);
     setGameTypes(['자동', '자동', '자동', '자동', '자동']);
@@ -120,9 +126,9 @@ export default function LottoGenerator({
     const label =
       mode === 'store' && targetStore
         ? `${targetStore.name} 기운`
-        : mode === 'stats'
-        ? '통계 추천'
-        : '1등 패턴';
+        : mode === 'auto'
+        ? '자동 추천'
+        : `1등 패턴 (${useSamples}회)`;
     saveHistoryAndServer(newGames, label, targetStore);
   };
 
@@ -295,28 +301,30 @@ export default function LottoGenerator({
         </select>
       </div>
 
-      {/* 2. 4가지 방식 선택 버튼 (메인 컬러 #10b981 통일) */}
+      {/* 2. 4가지 방식 선택 버튼 (리프레쉬 아이콘 포함으로 재클릭 직관성 강화) */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
         <button
-          onClick={() => handleGenerateAll('stats', linkedStore)}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all ${
-            activeMode === 'stats'
+          onClick={() => handleGenerateAll('auto', linkedStore)}
+          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
+            activeMode === 'auto'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          통계 추천
+          <RefreshCw className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <span>자동 추천</span>
         </button>
 
         <button
           onClick={() => handleGenerateAll('pattern', linkedStore)}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all ${
+          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
             activeMode === 'pattern'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          1등 패턴
+          <RefreshCw className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <span>1등 패턴</span>
         </button>
 
         <button
@@ -332,13 +340,14 @@ export default function LottoGenerator({
               handleGenerateAll('store', linkedStore);
             }
           }}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all ${
+          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
             activeMode === 'store'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          명당 기운
+          <RefreshCw className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <span>명당 기운</span>
         </button>
 
         <button
@@ -352,10 +361,43 @@ export default function LottoGenerator({
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          <Edit3 className="w-4 h-4" />
+          <Edit3 className="w-4 h-4 shrink-0" strokeWidth={2} />
           <span>직접 찍기</span>
         </button>
       </div>
+
+      {/* 1등 패턴 선택 시: 분석 기준 기간 선택 바 (기본 최근 50회차) */}
+      {activeMode === 'pattern' && (
+        <div className="bg-white rounded-2xl border border-slate-200 p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+          <span className="text-sm font-extrabold text-slate-800 shrink-0">
+            1등 패턴 분석 기간
+          </span>
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+            {[
+              { label: '최근 10회', val: 10 },
+              { label: '최근 30회', val: 30 },
+              { label: '최근 50회 (기본)', val: 50 },
+              { label: '최근 100회', val: 100 },
+              { label: '전체', val: 256 },
+            ].map((opt) => (
+              <button
+                key={opt.val}
+                onClick={() => {
+                  setPatternSampleCount(opt.val);
+                  handleGenerateAll('pattern', linkedStore, opt.val);
+                }}
+                className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold shrink-0 transition-colors ${
+                  patternSampleCount === opt.val
+                    ? 'bg-slate-900 text-white'
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* 3. 직접 찍기 원형 로또 볼 번호판 */}
       {activeMode === 'manual' && (
@@ -438,9 +480,6 @@ export default function LottoGenerator({
       {/* 4. 캡처용 로또 영수증 티켓 */}
       <div ref={ticketRef} className="receipt-paper receipt-sawtooth rounded-2xl p-5 sm:p-6 shadow-sm">
         <div className="text-center border-b-2 border-dashed border-slate-200 pb-4 mb-4">
-          <p className="text-sm font-extrabold text-emerald-700 tracking-wider uppercase mb-1">
-            로또 6/45 제 {latestDrawNo}회
-          </p>
           <h4 className="text-2xl font-black text-slate-900">이번 주 행운 번호</h4>
           <p className="text-sm text-slate-600 font-semibold mt-1">
             {linkedStore
@@ -448,8 +487,8 @@ export default function LottoGenerator({
               : activeMode === 'manual'
               ? '직접 마킹 · 반자동 용지'
               : activeMode === 'pattern'
-              ? '역대 1등 번호대 분산 조합'
-              : '최근 50회차 당첨 통계 기반'}
+              ? `최근 ${patternSampleCount}회차 1등 당첨 패턴 분석`
+              : '균형 잡힌 자동 추천 조합'}
           </p>
         </div>
 
@@ -502,7 +541,7 @@ export default function LottoGenerator({
           onClick={() =>
             activeMode === 'manual'
               ? handleFillRemainder(linkedStore ? 'store' : 'auto')
-              : handleGenerateAll(activeMode === 'pattern' ? 'pattern' : activeMode === 'store' ? 'store' : 'stats', linkedStore)
+              : handleGenerateAll(activeMode === 'pattern' ? 'pattern' : activeMode === 'store' ? 'store' : 'auto', linkedStore)
           }
           className="py-4 px-4 bg-[#10b981] hover:bg-[#059669] active:scale-[0.98] text-white rounded-2xl font-extrabold text-base flex items-center justify-center gap-2 transition-all"
         >
