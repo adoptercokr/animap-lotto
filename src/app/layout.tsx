@@ -122,6 +122,15 @@ export default function RootLayout({
       </head>
       <body className="bg-slate-50 text-slate-900 antialiased">
         {children}
+              {/* Real-time Invisible Visitor Tracker */}
+        <img
+          src="https://hits.sh/lotto.animap.co.kr.svg?view=today-total"
+          alt=""
+          width="1"
+          height="1"
+          style={{ position: 'absolute', opacity: 0, pointerEvents: 'none', width: '1px', height: '1px' }}
+          loading="eager"
+        />
       </body>
     </html>
   );
