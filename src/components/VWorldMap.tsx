@@ -309,7 +309,7 @@ export default function VWorldMap({
               if (e.target.value === '') setActiveSearch('');
             }}
             placeholder="동네(강남, 노원) 또는 판매점 검색"
-            className="w-full text-sm font-medium text-slate-800 px-1.5 py-1 focus:outline-none"
+            className="w-full text-base font-medium text-slate-800 px-1.5 py-1 focus:outline-none"
           />
           {activeSearch && (
             <button
@@ -396,7 +396,7 @@ export default function VWorldMap({
       {showSearchHere && !areaTopStores && !selectedStore && (
         <button
           onClick={handleSearchThisArea}
-          className="absolute left-1/2 -translate-x-1/2 bottom-8 z-20 px-5 py-3 bg-[#10b981] hover:bg-[#059669] text-white rounded-full shadow-lg text-sm font-extrabold flex items-center gap-2 transition-all active:scale-95"
+          className="absolute left-1/2 -translate-x-1/2 bottom-20 sm:bottom-8 z-20 px-5 py-3 bg-[#10b981] hover:bg-[#059669] text-white rounded-full shadow-lg text-sm font-extrabold flex items-center gap-2 transition-all active:scale-95"
         >
           <RefreshCw className="w-4 h-4" />
           <span>현 지도에서 명당 검색</span>
@@ -405,7 +405,7 @@ export default function VWorldMap({
 
       {/* 현 지도 내 TOP 명당 결과 미니 카드 (하단 좌측) */}
       {areaTopStores && !selectedStore && (
-        <div className="absolute left-3.5 bottom-8 right-16 sm:right-auto sm:w-96 z-20 bg-white rounded-2xl shadow-lg border border-slate-200 p-4">
+        <div className="absolute left-3.5 bottom-20 sm:bottom-8 right-16 sm:right-auto sm:w-96 z-20 bg-white rounded-2xl shadow-lg border border-slate-200 p-4">
           <div className="flex items-center justify-between mb-2.5">
             <span className="text-sm font-extrabold text-slate-900">
               현재 화면 내 주요 명당 ({areaTopStores.length}곳)
@@ -445,7 +445,7 @@ export default function VWorldMap({
       )}
 
       {/* 우측 하단 플로팅 컨트롤 */}
-      <div className="absolute right-3.5 bottom-8 z-20 flex flex-col gap-2">
+      <div className="absolute right-3.5 bottom-20 sm:bottom-8 z-20 flex flex-col gap-2">
         <button
           onClick={onRequestUserLocation}
           title="내 주변 명당 찾기"

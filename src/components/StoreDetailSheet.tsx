@@ -25,7 +25,7 @@ export default function StoreDetailSheet({
   const naverMapUrl = `https://map.naver.com/v5/search/${encodeURIComponent(store.addr + ' ' + store.name)}`;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 md:left-4 md:bottom-4 md:right-auto md:w-[380px] z-40">
+    <div className="fixed inset-x-0 bottom-0 md:left-4 md:bottom-4 md:right-auto md:w-[380px] z-50">
       <div className="bg-white rounded-t-3xl md:rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
         {/* 모바일 드래그 핸들 */}
         <div className="w-full flex justify-center pt-2.5 pb-1 md:hidden" onClick={onClose}>

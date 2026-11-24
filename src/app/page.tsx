@@ -196,8 +196,8 @@ export default function HomePage() {
             </span>
           </div>
 
-          {/* 4대 메인 탭 (심플한 단색 라인 아이콘 포함) */}
-          <nav className="flex items-center gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar">
+          {/* 4대 메인 탭 (PC 및 태블릿) */}
+          <nav className="hidden sm:flex items-center gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar">
             <button
               onClick={() => setActiveTab('generator')}
               className={`px-3 sm:px-4 py-2 rounded-xl text-sm sm:text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
@@ -257,13 +257,13 @@ export default function HomePage() {
             className="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 text-xs sm:text-sm font-bold flex items-center gap-1.5 shrink-0 transition-colors"
           >
             <Mail className="w-4 h-4 text-slate-500" strokeWidth={1.75} />
-            <span className="hidden md:inline">문의하기</span>
+            <span className="hidden sm:inline">문의하기</span>
           </button>
         </div>
       </header>
 
-      {/* 3. 메인 컨텐츠 영역 */}
-      <main className="flex-1 overflow-y-auto relative">
+      {/* 3. 메인 컨텐츠 영역 (모바일 하단 탭 바 높이 pb-16 확보) */}
+      <main className="flex-1 overflow-y-auto relative pb-16 sm:pb-0">
         {/* [TAB 1] 번호 뽑기 (메인 첫 화면) */}
         {activeTab === 'generator' && (
           <div className="max-w-5xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -450,8 +450,18 @@ export default function HomePage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="동네(강남, 노원, 부산) 또는 판매점명 검색"
-                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981]"
+                  className="w-full pl-10 pr-9 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-[#10b981]"
                 />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-700 text-sm font-bold"
+                    aria-label="검색어 지우기"
+                  >
+                    ✕
+                  </button>
+                )}
               </div>
 
               <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
@@ -679,6 +689,48 @@ export default function HomePage() {
           </div>
         </div>
       )}
+      {/* 모바일 전용 하단 고정 탭 바 (토스/네이버지도 스타일, 한 손 조작 최적화) */}
+      <nav className="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 py-1.5 px-2 flex items-center justify-around shadow-lg">
+        <button
+          onClick={() => setActiveTab('generator')}
+          className={`flex flex-col items-center justify-center py-1 flex-1 gap-1 transition-colors ${
+            activeTab === 'generator' ? 'text-[#10b981]' : 'text-slate-500'
+          }`}
+        >
+          <Ticket className="w-5 h-5" strokeWidth={activeTab === 'generator' ? 2.5 : 1.75} />
+          <span className="text-[11px] font-bold">번호 뽑기</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('ranking')}
+          className={`flex flex-col items-center justify-center py-1 flex-1 gap-1 transition-colors ${
+            activeTab === 'ranking' ? 'text-[#10b981]' : 'text-slate-500'
+          }`}
+        >
+          <Trophy className="w-5 h-5" strokeWidth={activeTab === 'ranking' ? 2.5 : 1.75} />
+          <span className="text-[11px] font-bold">명당 순위</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('map')}
+          className={`flex flex-col items-center justify-center py-1 flex-1 gap-1 transition-colors ${
+            activeTab === 'map' ? 'text-[#10b981]' : 'text-slate-500'
+          }`}
+        >
+          <MapIcon className="w-5 h-5" strokeWidth={activeTab === 'map' ? 2.5 : 1.75} />
+          <span className="text-[11px] font-bold">명당 지도</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('history')}
+          className={`flex flex-col items-center justify-center py-1 flex-1 gap-1 transition-colors ${
+            activeTab === 'history' ? 'text-[#10b981]' : 'text-slate-500'
+          }`}
+        >
+          <History className="w-5 h-5" strokeWidth={activeTab === 'history' ? 2.5 : 1.75} />
+          <span className="text-[11px] font-bold">당첨 번호</span>
+        </button>
+      </nav>
     </div>
   );
 }
