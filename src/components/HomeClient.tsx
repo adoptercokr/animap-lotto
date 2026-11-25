@@ -371,7 +371,7 @@ export default function HomeClient({ initialStores, initialHistory }: HomeClient
                       </div>
                       <button
                         onClick={() => handleGenerateWithStore(store)}
-                        className="px-3.5 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold rounded-xl shrink-0"
+                        className="px-2.5 py-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg shrink-0"
                       >
                         기운받기
                       </button>
@@ -385,9 +385,9 @@ export default function HomeClient({ initialStores, initialHistory }: HomeClient
                     setActiveTab('map');
                     handleRequestUserLocation();
                   }}
-                  className="w-full mt-4 py-4 bg-[#10b981] hover:bg-[#059669] text-white rounded-xl text-base font-extrabold flex items-center justify-center gap-2 transition-colors"
+                  className="w-full mt-3 py-2.5 sm:py-3 bg-[#10b981] hover:bg-[#059669] text-white rounded-xl text-sm sm:text-[15px] font-bold flex items-center justify-center gap-1.5 transition-colors"
                 >
-                  <MapIcon className="w-5 h-5" strokeWidth={1.75} />
+                  <MapIcon className="w-4 h-4" strokeWidth={1.75} />
                   <span>내 주변 명당 지도 보기</span>
                 </button>
               </div>

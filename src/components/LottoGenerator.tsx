@@ -302,28 +302,28 @@ export default function LottoGenerator({
       </div>
 
       {/* 2. 4가지 방식 선택 버튼 (리프레쉬 아이콘 포함으로 재클릭 직관성 강화) */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         <button
           onClick={() => handleGenerateAll('auto', linkedStore)}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
+          className={`py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-lg text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1.5 ${
             activeMode === 'auto'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          <RefreshCw className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <RefreshCw className="w-3.5 h-3.5 shrink-0" strokeWidth={2} />
           <span>자동 추천</span>
         </button>
 
         <button
           onClick={() => handleGenerateAll('pattern', linkedStore)}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
+          className={`py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-lg text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1.5 ${
             activeMode === 'pattern'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          <RefreshCw className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <RefreshCw className="w-3.5 h-3.5 shrink-0" strokeWidth={2} />
           <span>1등 패턴</span>
         </button>
 
@@ -340,13 +340,13 @@ export default function LottoGenerator({
               handleGenerateAll('store', linkedStore);
             }
           }}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
+          className={`py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-lg text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1.5 ${
             activeMode === 'store'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          <RefreshCw className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <RefreshCw className="w-3.5 h-3.5 shrink-0" strokeWidth={2} />
           <span>명당 기운</span>
         </button>
 
@@ -355,13 +355,13 @@ export default function LottoGenerator({
             setActiveMode('manual');
             handleClearManual(false);
           }}
-          className={`py-3.5 px-3 rounded-xl text-sm sm:text-base font-extrabold border transition-all flex items-center justify-center gap-1.5 ${
+          className={`py-2 sm:py-2.5 px-2.5 sm:px-3 rounded-lg text-xs sm:text-sm font-bold border transition-all flex items-center justify-center gap-1.5 ${
             activeMode === 'manual'
               ? 'bg-[#10b981] text-white border-[#10b981]'
               : 'bg-white text-slate-800 border-slate-200 hover:bg-slate-50'
           }`}
         >
-          <Edit3 className="w-4 h-4 shrink-0" strokeWidth={2} />
+          <Edit3 className="w-3.5 h-3.5 shrink-0" strokeWidth={2} />
           <span>직접 찍기</span>
         </button>
       </div>
@@ -543,18 +543,18 @@ export default function LottoGenerator({
               ? handleFillRemainder(linkedStore ? 'store' : 'auto')
               : handleGenerateAll(activeMode === 'pattern' ? 'pattern' : activeMode === 'store' ? 'store' : 'auto', linkedStore)
           }
-          className="py-4 px-4 bg-[#10b981] hover:bg-[#059669] active:scale-[0.98] text-white rounded-2xl font-extrabold text-base flex items-center justify-center gap-2 transition-all"
+          className="py-2.5 sm:py-3 px-3 sm:px-4 bg-[#10b981] hover:bg-[#059669] active:scale-[0.98] text-white rounded-xl font-bold text-sm sm:text-[15px] flex items-center justify-center gap-1.5 transition-all"
         >
-          <RefreshCw className="w-5 h-5" />
+          <RefreshCw className="w-4 h-4" />
           <span>{activeMode === 'manual' ? '나머지 채우기' : '새 번호 뽑기'}</span>
         </button>
 
         <button
           onClick={handleDownloadTicket}
           disabled={isDownloading}
-          className="py-4 px-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.98] text-white rounded-2xl font-extrabold text-base flex items-center justify-center gap-2 transition-all disabled:opacity-50"
+          className="py-2.5 sm:py-3 px-3 sm:px-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.98] text-white rounded-xl font-bold text-sm sm:text-[15px] flex items-center justify-center gap-1.5 transition-all disabled:opacity-50"
         >
-          <Download className="w-5 h-5" />
+          <Download className="w-4 h-4" />
           <span>{isDownloading ? '저장 중...' : '사진으로 저장'}</span>
         </button>
       </div>
