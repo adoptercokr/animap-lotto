@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import SubHeader from '@/components/SubHeader';
 import { REGIONS, AREAS, getAllStores } from '@/lib/seoData';
 
 export const dynamicParams = false;
@@ -103,31 +104,8 @@ export default async function RegionPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      {/* 상단 심플 헤더 */}
-      <header className="bg-white border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-[#10b981] flex items-center justify-center text-white font-black text-lg">
-              L
-            </div>
-            <span className="font-black text-xl text-slate-900">로또명당</span>
-          </Link>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/guide"
-              className="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100"
-            >
-              명당 가이드
-            </Link>
-            <Link
-              href="/"
-              className="px-4 py-2 rounded-xl bg-[#10b981] text-white text-sm font-extrabold"
-            >
-              번호 뽑기 · 지도
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* 상단 공용 헤더 (4대 메인 메뉴 유지) */}
+      <SubHeader current="region" />
 
       <main className="max-w-5xl mx-auto px-4 py-8 flex flex-col gap-8">
         {/* 지역 요약 히어로 */}

@@ -84,8 +84,14 @@ export default function HomeClient({ initialStores, initialHistory }: HomeClient
   const [contactError, setContactError] = useState<string | null>(null);
   const [contactSent, setContactSent] = useState(false);
 
-  // 화면이 이미 0ms에 뜬 뒤, 백그라운드에서 전국 4,735곳 전체 지도 데이터 조용히 로드
+  // URL ?tab=... 파라미터 처리 + 백그라운드에서 전국 4,735곳 전체 지도 데이터 로드
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const t = params.get('tab');
+    if (t === 'ranking' || t === 'map' || t === 'history' || t === 'generator') {
+      setActiveTab(t);
+    }
+
     fetch('/data/lotto_stores_compact.json')
       .then((res) => (res.ok ? res.json() : null))
       .then((allStores: LottoStore[] | null) => {
@@ -646,31 +652,44 @@ export default function HomeClient({ initialStores, initialHistory }: HomeClient
           </div>
         )}
 
-        {/* 하단 푸터 & 모바일 전용 문의하기 버튼 */}
+        {/* 하단 푸터 (당첨가이드 · 이용약관 · 개인정보처리방침 · 문의하기) */}
         {activeTab !== 'map' && (
-          <footer className="max-w-5xl mx-auto px-4 py-8 mt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-            <div className="flex items-center gap-3">
-              <span className="font-bold text-slate-700">로또명당</span>
-              <span>·</span>
-              <a href="/guide" className="hover:text-slate-900 font-medium">
-                당첨 가이드
-              </a>
+          <footer className="max-w-5xl mx-auto px-4 py-8 mt-4 border-t border-slate-200 flex flex-col gap-4 text-sm text-slate-500">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3 flex-wrap justify-center">
+                <span className="font-bold text-slate-800">로또명당</span>
+                <span>·</span>
+                <a href="/guide" className="hover:text-slate-900 font-semibold">
+                  당첨가이드
+                </a>
+                <span>·</span>
+                <a href="/terms" className="hover:text-slate-900 font-semibold">
+                  이용약관
+                </a>
+                <span>·</span>
+                <a href="/privacy" className="hover:text-slate-900 font-semibold">
+                  개인정보처리방침
+                </a>
+              </div>
+              <button
+                onClick={() => {
+                  setContactSent(false);
+                  setContactError(null);
+                  setContactTitle('');
+                  setContactInfo('');
+                  setContactCompany('');
+                  setContactText('');
+                  setShowContactModal(true);
+                }}
+                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 text-sm font-extrabold flex items-center justify-center gap-2 transition-colors"
+              >
+                <Mail className="w-4 h-4 text-slate-600" strokeWidth={1.75} />
+                <span>간편 문의 · 광고 제휴하기</span>
+              </button>
             </div>
-            <button
-              onClick={() => {
-                setContactSent(false);
-                setContactError(null);
-                setContactTitle('');
-                setContactInfo('');
-                setContactCompany('');
-                setContactText('');
-                setShowContactModal(true);
-              }}
-              className="w-full sm:w-auto px-5 py-3 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 text-sm font-extrabold flex items-center justify-center gap-2 transition-colors"
-            >
-              <Mail className="w-4 h-4 text-slate-600" strokeWidth={1.75} />
-              <span>간편 문의 · 광고 제휴하기</span>
-            </button>
+            <p className="text-xs text-slate-400 text-center sm:text-left leading-relaxed">
+              본 사이트는 동행복권 공개 통계 데이터를 기반으로 정보를 제공하며 복권 판매 및 구매 대행을 하지 않습니다. 만 19세 미만 청소년은 복권을 구매할 수 없습니다.
+            </p>
           </footer>
         )}
       </main>

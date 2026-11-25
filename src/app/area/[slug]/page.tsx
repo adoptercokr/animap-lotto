@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import SubHeader from '@/components/SubHeader';
 import { AREAS, REGIONS, getAllStores } from '@/lib/seoData';
 
 export const dynamicParams = false;
@@ -69,32 +70,7 @@ export default async function AreaPage({
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="bg-white border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-[#10b981] flex items-center justify-center text-white font-black text-lg">
-              L
-            </div>
-            <span className="font-black text-xl text-slate-900">로또명당</span>
-          </Link>
-          <div className="flex items-center gap-2">
-            {region && (
-              <Link
-                href={`/region/${region.slug}`}
-                className="px-3 py-2 rounded-xl text-sm font-bold text-slate-700 hover:bg-slate-100"
-              >
-                {region.name} 전체
-              </Link>
-            )}
-            <Link
-              href="/"
-              className="px-4 py-2 rounded-xl bg-[#10b981] text-white text-sm font-extrabold"
-            >
-              번호 뽑기 · 지도
-            </Link>
-          </div>
-        </div>
-      </header>
+      <SubHeader current="area" />
 
       <main className="max-w-5xl mx-auto px-4 py-8 flex flex-col gap-6">
         <section className="bg-white rounded-2xl border border-slate-200 p-6">
