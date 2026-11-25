@@ -334,11 +334,11 @@ export default function VWorldMap({
             </button>
           </form>
 
-          {/* 필터 토글 버튼 */}
+          {/* 모바일 전용 '1등 필터' 토글 버튼 (PC에서는 항상 펼쳐서 표시) */}
           <button
             type="button"
             onClick={() => setShowFilters((prev) => !prev)}
-            className={`px-3 py-2.5 rounded-xl shadow-md border text-xs sm:text-sm font-extrabold flex items-center gap-1 shrink-0 transition-colors ${
+            className={`md:hidden px-3 py-2.5 rounded-xl shadow-md border text-xs font-extrabold flex items-center gap-1 shrink-0 transition-colors ${
               showFilters || period !== 'all' || minWins > 0
                 ? 'bg-slate-900 text-white border-slate-900'
                 : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'
@@ -347,81 +347,83 @@ export default function VWorldMap({
             <SlidersHorizontal className="w-4 h-4" />
             <span>
               {period !== 'all' || minWins > 0
-                ? `${period === '1y' ? '1년' : period === '6m' ? '6개월' : period === '3m' ? '3개월' : '누적'}${
-                    minWins > 0 ? `·1등${minWins}+` : ''
+                ? `1등 ${period === '1y' ? '1년' : period === '6m' ? '6개월' : period === '3m' ? '3개월' : '누적'}${
+                    minWins > 0 ? `·${minWins}+` : ''
                   }`
-                : '필터'}
+                : '1등 필터'}
             </span>
           </button>
         </div>
 
-        {/* 접이식 필터 패널 */}
-        {showFilters && (
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200 p-3 flex flex-col gap-2.5">
-            <div>
-              <span className="text-[11px] font-bold text-slate-500 block mb-1">당첨 기간</span>
-              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
-                {[
-                  { label: '전체 누적', val: 'all' as const },
-                  { label: '최근 1년', val: '1y' as const },
-                  { label: '최근 6개월', val: '6m' as const },
-                  { label: '최근 3개월', val: '3m' as const },
-                ].map((opt) => (
-                  <button
-                    key={opt.val}
-                    onClick={() => {
-                      setPeriod(opt.val);
-                      setMinWins(0);
-                      setAreaTopStores(null);
-                    }}
-                    className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
-                      period === opt.val
-                        ? 'bg-slate-900 text-white'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                  >
-                    {opt.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <span className="text-[11px] font-bold text-slate-500 block mb-1">1등 당첨 횟수</span>
-              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
-                {(period === 'all'
-                  ? [
-                      { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
-                      { label: '1등 3회+', val: 3 },
-                      { label: '1등 5회+', val: 5 },
-                      { label: '1등 10회+', val: 10 },
-                      { label: '1등 15회+', val: 15 },
-                    ]
-                  : [
-                      { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
-                      { label: '1등 2회+', val: 2 },
-                      { label: '1등 3회+', val: 3 },
-                    ]
-                ).map((opt) => (
-                  <button
-                    key={opt.val}
-                    onClick={() => {
-                      setMinWins(opt.val);
-                      setAreaTopStores(null);
-                    }}
-                    className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
-                      minWins === opt.val
-                        ? 'bg-[#10b981] text-white'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                  >
-                    {opt.label}
-                  </button>
-                ))}
-              </div>
+        {/* 필터 패널: PC(md:)에서는 항상 노출, 모바일에서는 '1등 필터' 클릭 시 노출 */}
+        <div
+          className={`${
+            showFilters ? 'flex' : 'hidden md:flex'
+          } flex-col gap-2 bg-white/95 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none rounded-2xl md:rounded-none shadow-lg md:shadow-none border border-slate-200 md:border-none p-3 md:p-0`}
+        >
+          <div className="md:bg-white/95 md:backdrop-blur-sm md:p-1 md:rounded-xl md:shadow-sm md:border md:border-slate-200">
+            <span className="text-[11px] font-bold text-slate-500 block mb-1 md:hidden">당첨 기간</span>
+            <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
+              {[
+                { label: '전체 누적', val: 'all' as const },
+                { label: '최근 1년', val: '1y' as const },
+                { label: '최근 6개월', val: '6m' as const },
+                { label: '최근 3개월', val: '3m' as const },
+              ].map((opt) => (
+                <button
+                  key={opt.val}
+                  onClick={() => {
+                    setPeriod(opt.val);
+                    setMinWins(0);
+                    setAreaTopStores(null);
+                  }}
+                  className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
+                    period === opt.val
+                      ? 'bg-slate-900 text-white'
+                      : 'bg-slate-100 md:bg-transparent text-slate-700 hover:bg-slate-200 md:hover:bg-slate-100'
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
             </div>
           </div>
-        )}
+
+          <div className="md:bg-white/95 md:backdrop-blur-sm md:p-1 md:rounded-xl md:shadow-sm md:border md:border-slate-200">
+            <span className="text-[11px] font-bold text-slate-500 block mb-1 md:hidden">1등 당첨 횟수</span>
+            <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
+              {(period === 'all'
+                ? [
+                    { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
+                    { label: '1등 3회+', val: 3 },
+                    { label: '1등 5회+', val: 5 },
+                    { label: '1등 10회+', val: 10 },
+                    { label: '1등 15회+', val: 15 },
+                  ]
+                : [
+                    { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
+                    { label: '1등 2회+', val: 2 },
+                    { label: '1등 3회+', val: 3 },
+                  ]
+              ).map((opt) => (
+                <button
+                  key={opt.val}
+                  onClick={() => {
+                    setMinWins(opt.val);
+                    setAreaTopStores(null);
+                  }}
+                  className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
+                    minWins === opt.val
+                      ? 'bg-[#10b981] text-white'
+                      : 'bg-slate-100 md:bg-transparent text-slate-700 hover:bg-slate-200 md:hover:bg-slate-100'
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* 하단 중앙: 현 지도에서 명당 검색 플로팅 버튼 */}
