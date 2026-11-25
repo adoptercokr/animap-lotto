@@ -1,13 +1,32 @@
 # 로또명당 (lotto.animap.co.kr)
 
-> 대한민국 전국 로또 1·2등 명당 지도, 기간별 명당 순위, 반자동 로또 번호 생성기 웹 서비스
+> 대한민국 전국 4,735개 로또 1등 배출 명당 지도, 기간별 명당 순위(전체·최근 1년·6개월·3개월), 반자동 로또 번호 생성기 및 당첨금 가이드 웹 서비스
 
-## 핵심 기능
-- **로또 번호 뽑기**: 통계 추천, 역대 1등 패턴, 선택한 명당 기운 적용, 1~45 직접 찍기(반자동·수동) 및 영수증 이미지 저장 지원
-- **전국 로또 명당 순위**: 전국 4,735개 1등 배출 판매점의 전체 누적, 최근 1년, 최근 6개월, 최근 3개월 기준 순위 및 지역별 검색
-- **전국 로또 명당 지도**: 내 위치(GPS) 기반 주변 1등 명당 찾기, 1등 당첨 횟수별(3회+/5회+/10회+/15회+) 필터, 현 지도 내 명당 검색, 카카오맵/네이버지도 길찾기 연동
-- **역대 당첨 번호 조회**: 2022년 ~ 현재까지 연도별 로또 6/45 당첨 번호, 1등 당첨금액 및 당첨자 수 조회
+## 핵심 서비스 URL
+- 메인 (로또 번호 뽑기 · 명당 순위 · 명당 지도): https://lotto.animap.co.kr
+- 로또 명당 TOP 20 및 당첨금 세금·수령 가이드: https://lotto.animap.co.kr/guide
+- 사이트맵 (전국 184개 지역·구군 페이지 포함): https://lotto.animap.co.kr/sitemap.xml
 
-## URL
-- 메인 서비스: https://lotto.animap.co.kr
-- 사이트맵: https://lotto.animap.co.kr/sitemap.xml
+## 전국 17개 시·도별 로또 명당 안내
+- 서울 로또 명당: https://lotto.animap.co.kr/region/seoul
+- 경기 로또 명당: https://lotto.animap.co.kr/region/gyeonggi
+- 부산 로또 명당: https://lotto.animap.co.kr/region/busan
+- 인천 로또 명당: https://lotto.animap.co.kr/region/incheon
+- 대구 로또 명당: https://lotto.animap.co.kr/region/daegu
+- 대전 로또 명당: https://lotto.animap.co.kr/region/daejeon
+- 광주 로또 명당: https://lotto.animap.co.kr/region/gwangju
+- 울산 로또 명당: https://lotto.animap.co.kr/region/ulsan
+- 세종 로또 명당: https://lotto.animap.co.kr/region/sejong
+- 강원 로또 명당: https://lotto.animap.co.kr/region/gangwon
+- 충북 로또 명당: https://lotto.animap.co.kr/region/chungbuk
+- 충남 로또 명당: https://lotto.animap.co.kr/region/chungnam
+- 전북 로또 명당: https://lotto.animap.co.kr/region/jeonbuk
+- 전남 로또 명당: https://lotto.animap.co.kr/region/jeonnam
+- 경북 로또 명당: https://lotto.animap.co.kr/region/gyeongbuk
+- 경남 로또 명당: https://lotto.animap.co.kr/region/gyeongnam
+- 제주 로또 명당: https://lotto.animap.co.kr/region/jeju
+
+## 핵심 데이터 요약
+- 역대 대표 오프라인 명당: 스파(서울 노원구 53회), 부일카서비스(부산 동구 51회), 로또명당인주점(충남 아산시 34회), 일등복권편의점(대구 달서구 31회), 뉴빅마트(부산 기장군 30회), 로또휴게실(경기 용인시 27회), 잠실매점(서울 송파구 22회)
+- 기간별 신흥 명당 분석: 최근 1년(52주), 최근 6개월(26주), 최근 3개월(13주) 기준 1등 다수 배출 판매점 실시간 필터링 제공
+- 반자동 로또 번호 생성: 자동 추천, 최근 50회차 1등 패턴 분석, 명당 기운 시드 적용, 1~45 직접 찍기 및 나머지 자동 채우기 지원

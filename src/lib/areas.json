@@ -1,0 +1,1157 @@
+[
+  {
+    "slug": "gyeonggi-suwonsi",
+    "reg": "경기",
+    "sig": "수원시",
+    "regSlug": "gyeonggi",
+    "count": 110
+  },
+  {
+    "slug": "gyeongnam-changwonsi",
+    "reg": "경남",
+    "sig": "창원시",
+    "regSlug": "gyeongnam",
+    "count": 105
+  },
+  {
+    "slug": "gyeonggi-goyangsi",
+    "reg": "경기",
+    "sig": "고양시",
+    "regSlug": "gyeonggi",
+    "count": 92
+  },
+  {
+    "slug": "chungbuk-cheongjusi",
+    "reg": "충북",
+    "sig": "청주시",
+    "regSlug": "chungbuk",
+    "count": 79
+  },
+  {
+    "slug": "gyeonggi-seongnamsi",
+    "reg": "경기",
+    "sig": "성남시",
+    "regSlug": "gyeonggi",
+    "count": 78
+  },
+  {
+    "slug": "gyeonggi-ansansi",
+    "reg": "경기",
+    "sig": "안산시",
+    "regSlug": "gyeonggi",
+    "count": 73
+  },
+  {
+    "slug": "gyeonggi-bucheonsi",
+    "reg": "경기",
+    "sig": "부천시",
+    "regSlug": "gyeonggi",
+    "count": 71
+  },
+  {
+    "slug": "chungnam-cheonansi",
+    "reg": "충남",
+    "sig": "천안시",
+    "regSlug": "chungnam",
+    "count": 66
+  },
+  {
+    "slug": "gyeonggi-hwaseongsi",
+    "reg": "경기",
+    "sig": "화성시",
+    "regSlug": "gyeonggi",
+    "count": 61
+  },
+  {
+    "slug": "jeonbuk-jeonjusi",
+    "reg": "전북",
+    "sig": "전주시",
+    "regSlug": "jeonbuk",
+    "count": 60
+  },
+  {
+    "slug": "incheon-bupyeonggu",
+    "reg": "인천",
+    "sig": "부평구",
+    "regSlug": "incheon",
+    "count": 59
+  },
+  {
+    "slug": "gyeonggi-yonginsi",
+    "reg": "경기",
+    "sig": "용인시",
+    "regSlug": "gyeonggi",
+    "count": 57
+  },
+  {
+    "slug": "seoul-gangnamgu",
+    "reg": "서울",
+    "sig": "강남구",
+    "regSlug": "seoul",
+    "count": 56
+  },
+  {
+    "slug": "gyeonggi-pyeongtaegsi",
+    "reg": "경기",
+    "sig": "평택시",
+    "regSlug": "gyeonggi",
+    "count": 55
+  },
+  {
+    "slug": "seoul-songpagu",
+    "reg": "서울",
+    "sig": "송파구",
+    "regSlug": "seoul",
+    "count": 53
+  },
+  {
+    "slug": "seoul-junggu",
+    "reg": "서울",
+    "sig": "중구",
+    "regSlug": "seoul",
+    "count": 51
+  },
+  {
+    "slug": "gyeonggi-namyangjusi",
+    "reg": "경기",
+    "sig": "남양주시",
+    "regSlug": "gyeonggi",
+    "count": 51
+  },
+  {
+    "slug": "seoul-gangdonggu",
+    "reg": "서울",
+    "sig": "강동구",
+    "regSlug": "seoul",
+    "count": 50
+  },
+  {
+    "slug": "incheon-namdonggu",
+    "reg": "인천",
+    "sig": "남동구",
+    "regSlug": "incheon",
+    "count": 50
+  },
+  {
+    "slug": "daegu-dalseogu",
+    "reg": "대구",
+    "sig": "달서구",
+    "regSlug": "daegu",
+    "count": 49
+  },
+  {
+    "slug": "seoul-yeongdeungpogu",
+    "reg": "서울",
+    "sig": "영등포구",
+    "regSlug": "seoul",
+    "count": 49
+  },
+  {
+    "slug": "gyeonggi-siheungsi",
+    "reg": "경기",
+    "sig": "시흥시",
+    "regSlug": "gyeonggi",
+    "count": 49
+  },
+  {
+    "slug": "incheon-seogu",
+    "reg": "인천",
+    "sig": "서구",
+    "regSlug": "incheon",
+    "count": 49
+  },
+  {
+    "slug": "jeju-jejusi",
+    "reg": "제주",
+    "sig": "제주시",
+    "regSlug": "jeju",
+    "count": 49
+  },
+  {
+    "slug": "seoul-gurogu",
+    "reg": "서울",
+    "sig": "구로구",
+    "regSlug": "seoul",
+    "count": 48
+  },
+  {
+    "slug": "gyeongnam-gimhaesi",
+    "reg": "경남",
+    "sig": "김해시",
+    "regSlug": "gyeongnam",
+    "count": 47
+  },
+  {
+    "slug": "seoul-gangseogu",
+    "reg": "서울",
+    "sig": "강서구",
+    "regSlug": "seoul",
+    "count": 46
+  },
+  {
+    "slug": "ulsan-namgu",
+    "reg": "울산",
+    "sig": "남구",
+    "regSlug": "ulsan",
+    "count": 45
+  },
+  {
+    "slug": "gyeonggi-uijeongbusi",
+    "reg": "경기",
+    "sig": "의정부시",
+    "regSlug": "gyeonggi",
+    "count": 45
+  },
+  {
+    "slug": "chungnam-asansi",
+    "reg": "충남",
+    "sig": "아산시",
+    "regSlug": "chungnam",
+    "count": 44
+  },
+  {
+    "slug": "gyeonggi-anyangsi",
+    "reg": "경기",
+    "sig": "안양시",
+    "regSlug": "gyeonggi",
+    "count": 44
+  },
+  {
+    "slug": "gyeonggi-gimposi",
+    "reg": "경기",
+    "sig": "김포시",
+    "regSlug": "gyeonggi",
+    "count": 44
+  },
+  {
+    "slug": "seoul-seochogu",
+    "reg": "서울",
+    "sig": "서초구",
+    "regSlug": "seoul",
+    "count": 43
+  },
+  {
+    "slug": "gyeongbuk-pohangsi",
+    "reg": "경북",
+    "sig": "포항시",
+    "regSlug": "gyeongbuk",
+    "count": 43
+  },
+  {
+    "slug": "gyeongbuk-gumisi",
+    "reg": "경북",
+    "sig": "구미시",
+    "regSlug": "gyeongbuk",
+    "count": 43
+  },
+  {
+    "slug": "daegu-buggu",
+    "reg": "대구",
+    "sig": "북구",
+    "regSlug": "daegu",
+    "count": 42
+  },
+  {
+    "slug": "busan-busanjingu",
+    "reg": "부산",
+    "sig": "부산진구",
+    "regSlug": "busan",
+    "count": 42
+  },
+  {
+    "slug": "daejeon-seogu",
+    "reg": "대전",
+    "sig": "서구",
+    "regSlug": "daejeon",
+    "count": 42
+  },
+  {
+    "slug": "gyeonggi-pajusi",
+    "reg": "경기",
+    "sig": "파주시",
+    "regSlug": "gyeonggi",
+    "count": 41
+  },
+  {
+    "slug": "gwangju-gwangsangu",
+    "reg": "광주",
+    "sig": "광산구",
+    "regSlug": "gwangju",
+    "count": 40
+  },
+  {
+    "slug": "seoul-gwanaggu",
+    "reg": "서울",
+    "sig": "관악구",
+    "regSlug": "seoul",
+    "count": 40
+  },
+  {
+    "slug": "gyeongnam-yangsansi",
+    "reg": "경남",
+    "sig": "양산시",
+    "regSlug": "gyeongnam",
+    "count": 39
+  },
+  {
+    "slug": "gwangju-buggu",
+    "reg": "광주",
+    "sig": "북구",
+    "regSlug": "gwangju",
+    "count": 39
+  },
+  {
+    "slug": "incheon-gyeyanggu",
+    "reg": "인천",
+    "sig": "계양구",
+    "regSlug": "incheon",
+    "count": 39
+  },
+  {
+    "slug": "seoul-dongjaggu",
+    "reg": "서울",
+    "sig": "동작구",
+    "regSlug": "seoul",
+    "count": 38
+  },
+  {
+    "slug": "seoul-yangcheongu",
+    "reg": "서울",
+    "sig": "양천구",
+    "regSlug": "seoul",
+    "count": 38
+  },
+  {
+    "slug": "seoul-dongdaemungu",
+    "reg": "서울",
+    "sig": "동대문구",
+    "regSlug": "seoul",
+    "count": 37
+  },
+  {
+    "slug": "seoul-eunpyeonggu",
+    "reg": "서울",
+    "sig": "은평구",
+    "regSlug": "seoul",
+    "count": 37
+  },
+  {
+    "slug": "seoul-jungranggu",
+    "reg": "서울",
+    "sig": "중랑구",
+    "regSlug": "seoul",
+    "count": 36
+  },
+  {
+    "slug": "busan-sahagu",
+    "reg": "부산",
+    "sig": "사하구",
+    "regSlug": "busan",
+    "count": 35
+  },
+  {
+    "slug": "daejeon-junggu",
+    "reg": "대전",
+    "sig": "중구",
+    "regSlug": "daejeon",
+    "count": 34
+  },
+  {
+    "slug": "gangwon-wonjusi",
+    "reg": "강원",
+    "sig": "원주시",
+    "regSlug": "gangwon",
+    "count": 34
+  },
+  {
+    "slug": "seoul-mapogu",
+    "reg": "서울",
+    "sig": "마포구",
+    "regSlug": "seoul",
+    "count": 33
+  },
+  {
+    "slug": "incheon-michuholgu",
+    "reg": "인천",
+    "sig": "미추홀구",
+    "regSlug": "incheon",
+    "count": 32
+  },
+  {
+    "slug": "seoul-jongrogu",
+    "reg": "서울",
+    "sig": "종로구",
+    "regSlug": "seoul",
+    "count": 31
+  },
+  {
+    "slug": "daejeon-yuseonggu",
+    "reg": "대전",
+    "sig": "유성구",
+    "regSlug": "daejeon",
+    "count": 31
+  },
+  {
+    "slug": "gangwon-chuncheonsi",
+    "reg": "강원",
+    "sig": "춘천시",
+    "regSlug": "gangwon",
+    "count": 31
+  },
+  {
+    "slug": "seoul-gwangjingu",
+    "reg": "서울",
+    "sig": "광진구",
+    "regSlug": "seoul",
+    "count": 31
+  },
+  {
+    "slug": "busan-sasanggu",
+    "reg": "부산",
+    "sig": "사상구",
+    "regSlug": "busan",
+    "count": 31
+  },
+  {
+    "slug": "seoul-seongbuggu",
+    "reg": "서울",
+    "sig": "성북구",
+    "regSlug": "seoul",
+    "count": 30
+  },
+  {
+    "slug": "ulsan-junggu",
+    "reg": "울산",
+    "sig": "중구",
+    "regSlug": "ulsan",
+    "count": 29
+  },
+  {
+    "slug": "gyeonggi-gwangmyeongsi",
+    "reg": "경기",
+    "sig": "광명시",
+    "regSlug": "gyeonggi",
+    "count": 29
+  },
+  {
+    "slug": "seoul-nowongu",
+    "reg": "서울",
+    "sig": "노원구",
+    "regSlug": "seoul",
+    "count": 28
+  },
+  {
+    "slug": "daegu-donggu",
+    "reg": "대구",
+    "sig": "동구",
+    "regSlug": "daegu",
+    "count": 28
+  },
+  {
+    "slug": "busan-dongraegu",
+    "reg": "부산",
+    "sig": "동래구",
+    "regSlug": "busan",
+    "count": 28
+  },
+  {
+    "slug": "jeonnam-mogposi",
+    "reg": "전남",
+    "sig": "목포시",
+    "regSlug": "jeonnam",
+    "count": 28
+  },
+  {
+    "slug": "seoul-dobonggu",
+    "reg": "서울",
+    "sig": "도봉구",
+    "regSlug": "seoul",
+    "count": 28
+  },
+  {
+    "slug": "gwangju-seogu",
+    "reg": "광주",
+    "sig": "서구",
+    "regSlug": "gwangju",
+    "count": 27
+  },
+  {
+    "slug": "gyeonggi-gwangjusi",
+    "reg": "경기",
+    "sig": "광주시",
+    "regSlug": "gyeonggi",
+    "count": 27
+  },
+  {
+    "slug": "gyeongnam-geojesi",
+    "reg": "경남",
+    "sig": "거제시",
+    "regSlug": "gyeongnam",
+    "count": 27
+  },
+  {
+    "slug": "gyeongnam-jinjusi",
+    "reg": "경남",
+    "sig": "진주시",
+    "regSlug": "gyeongnam",
+    "count": 27
+  },
+  {
+    "slug": "gyeonggi-osansi",
+    "reg": "경기",
+    "sig": "오산시",
+    "regSlug": "gyeonggi",
+    "count": 27
+  },
+  {
+    "slug": "gyeonggi-gunposi",
+    "reg": "경기",
+    "sig": "군포시",
+    "regSlug": "gyeonggi",
+    "count": 26
+  },
+  {
+    "slug": "gyeonggi-icheonsi",
+    "reg": "경기",
+    "sig": "이천시",
+    "regSlug": "gyeonggi",
+    "count": 26
+  },
+  {
+    "slug": "seoul-seodaemungu",
+    "reg": "서울",
+    "sig": "서대문구",
+    "regSlug": "seoul",
+    "count": 26
+  },
+  {
+    "slug": "busan-haeundaegu",
+    "reg": "부산",
+    "sig": "해운대구",
+    "regSlug": "busan",
+    "count": 26
+  },
+  {
+    "slug": "daegu-suseonggu",
+    "reg": "대구",
+    "sig": "수성구",
+    "regSlug": "daegu",
+    "count": 25
+  },
+  {
+    "slug": "gangwon-gangreungsi",
+    "reg": "강원",
+    "sig": "강릉시",
+    "regSlug": "gangwon",
+    "count": 25
+  },
+  {
+    "slug": "seoul-seongdonggu",
+    "reg": "서울",
+    "sig": "성동구",
+    "regSlug": "seoul",
+    "count": 25
+  },
+  {
+    "slug": "seoul-gangbuggu",
+    "reg": "서울",
+    "sig": "강북구",
+    "regSlug": "seoul",
+    "count": 25
+  },
+  {
+    "slug": "seoul-geumcheongu",
+    "reg": "서울",
+    "sig": "금천구",
+    "regSlug": "seoul",
+    "count": 25
+  },
+  {
+    "slug": "incheon-yeonsugu",
+    "reg": "인천",
+    "sig": "연수구",
+    "regSlug": "incheon",
+    "count": 25
+  },
+  {
+    "slug": "gyeonggi-anseongsi",
+    "reg": "경기",
+    "sig": "안성시",
+    "regSlug": "gyeonggi",
+    "count": 25
+  },
+  {
+    "slug": "jeonbuk-gunsansi",
+    "reg": "전북",
+    "sig": "군산시",
+    "regSlug": "jeonbuk",
+    "count": 24
+  },
+  {
+    "slug": "jeonnam-suncheonsi",
+    "reg": "전남",
+    "sig": "순천시",
+    "regSlug": "jeonnam",
+    "count": 23
+  },
+  {
+    "slug": "jeonnam-yeosusi",
+    "reg": "전남",
+    "sig": "여수시",
+    "regSlug": "jeonnam",
+    "count": 23
+  },
+  {
+    "slug": "daejeon-daedeoggu",
+    "reg": "대전",
+    "sig": "대덕구",
+    "regSlug": "daejeon",
+    "count": 23
+  },
+  {
+    "slug": "daejeon-donggu",
+    "reg": "대전",
+    "sig": "동구",
+    "regSlug": "daejeon",
+    "count": 22
+  },
+  {
+    "slug": "gyeongbuk-gyeongjusi",
+    "reg": "경북",
+    "sig": "경주시",
+    "regSlug": "gyeongbuk",
+    "count": 22
+  },
+  {
+    "slug": "gyeongbuk-gyeongsansi",
+    "reg": "경북",
+    "sig": "경산시",
+    "regSlug": "gyeongbuk",
+    "count": 22
+  },
+  {
+    "slug": "gyeonggi-yangjusi",
+    "reg": "경기",
+    "sig": "양주시",
+    "regSlug": "gyeonggi",
+    "count": 22
+  },
+  {
+    "slug": "busan-junggu",
+    "reg": "부산",
+    "sig": "중구",
+    "regSlug": "busan",
+    "count": 21
+  },
+  {
+    "slug": "busan-geumjeonggu",
+    "reg": "부산",
+    "sig": "금정구",
+    "regSlug": "busan",
+    "count": 21
+  },
+  {
+    "slug": "gyeonggi-gurisi",
+    "reg": "경기",
+    "sig": "구리시",
+    "regSlug": "gyeonggi",
+    "count": 20
+  },
+  {
+    "slug": "chungbuk-chungjusi",
+    "reg": "충북",
+    "sig": "충주시",
+    "regSlug": "chungbuk",
+    "count": 20
+  },
+  {
+    "slug": "gyeonggi-pocheonsi",
+    "reg": "경기",
+    "sig": "포천시",
+    "regSlug": "gyeonggi",
+    "count": 19
+  },
+  {
+    "slug": "jeonbuk-igsansi",
+    "reg": "전북",
+    "sig": "익산시",
+    "regSlug": "jeonbuk",
+    "count": 19
+  },
+  {
+    "slug": "busan-buggu",
+    "reg": "부산",
+    "sig": "북구",
+    "regSlug": "busan",
+    "count": 19
+  },
+  {
+    "slug": "busan-namgu",
+    "reg": "부산",
+    "sig": "남구",
+    "regSlug": "busan",
+    "count": 19
+  },
+  {
+    "slug": "daegu-seogu",
+    "reg": "대구",
+    "sig": "서구",
+    "regSlug": "daegu",
+    "count": 18
+  },
+  {
+    "slug": "chungnam-seosansi",
+    "reg": "충남",
+    "sig": "서산시",
+    "regSlug": "chungnam",
+    "count": 18
+  },
+  {
+    "slug": "busan-yeonjegu",
+    "reg": "부산",
+    "sig": "연제구",
+    "regSlug": "busan",
+    "count": 18
+  },
+  {
+    "slug": "ulsan-donggu",
+    "reg": "울산",
+    "sig": "동구",
+    "regSlug": "ulsan",
+    "count": 18
+  },
+  {
+    "slug": "daegu-namgu",
+    "reg": "대구",
+    "sig": "남구",
+    "regSlug": "daegu",
+    "count": 18
+  },
+  {
+    "slug": "seoul-yongsangu",
+    "reg": "서울",
+    "sig": "용산구",
+    "regSlug": "seoul",
+    "count": 17
+  },
+  {
+    "slug": "ulsan-uljugun",
+    "reg": "울산",
+    "sig": "울주군",
+    "regSlug": "ulsan",
+    "count": 17
+  },
+  {
+    "slug": "chungnam-dangjinsi",
+    "reg": "충남",
+    "sig": "당진시",
+    "regSlug": "chungnam",
+    "count": 16
+  },
+  {
+    "slug": "ulsan-buggu",
+    "reg": "울산",
+    "sig": "북구",
+    "regSlug": "ulsan",
+    "count": 16
+  },
+  {
+    "slug": "jeonnam-gwangyangsi",
+    "reg": "전남",
+    "sig": "광양시",
+    "regSlug": "jeonnam",
+    "count": 16
+  },
+  {
+    "slug": "busan-donggu",
+    "reg": "부산",
+    "sig": "동구",
+    "regSlug": "busan",
+    "count": 15
+  },
+  {
+    "slug": "incheon-junggu",
+    "reg": "인천",
+    "sig": "중구",
+    "regSlug": "incheon",
+    "count": 15
+  },
+  {
+    "slug": "jeju-seogwiposi",
+    "reg": "제주",
+    "sig": "서귀포시",
+    "regSlug": "jeju",
+    "count": 15
+  },
+  {
+    "slug": "chungnam-nonsansi",
+    "reg": "충남",
+    "sig": "논산시",
+    "regSlug": "chungnam",
+    "count": 15
+  },
+  {
+    "slug": "busan-suyeonggu",
+    "reg": "부산",
+    "sig": "수영구",
+    "regSlug": "busan",
+    "count": 14
+  },
+  {
+    "slug": "chungbuk-jecheonsi",
+    "reg": "충북",
+    "sig": "제천시",
+    "regSlug": "chungbuk",
+    "count": 14
+  },
+  {
+    "slug": "gyeongnam-tongyeongsi",
+    "reg": "경남",
+    "sig": "통영시",
+    "regSlug": "gyeongnam",
+    "count": 14
+  },
+  {
+    "slug": "gyeongbuk-andongsi",
+    "reg": "경북",
+    "sig": "안동시",
+    "regSlug": "gyeongbuk",
+    "count": 14
+  },
+  {
+    "slug": "gyeongbuk-gimcheonsi",
+    "reg": "경북",
+    "sig": "김천시",
+    "regSlug": "gyeongbuk",
+    "count": 13
+  },
+  {
+    "slug": "busan-gijanggun",
+    "reg": "부산",
+    "sig": "기장군",
+    "regSlug": "busan",
+    "count": 12
+  },
+  {
+    "slug": "daegu-junggu",
+    "reg": "대구",
+    "sig": "중구",
+    "regSlug": "daegu",
+    "count": 12
+  },
+  {
+    "slug": "gyeonggi-hanamsi",
+    "reg": "경기",
+    "sig": "하남시",
+    "regSlug": "gyeonggi",
+    "count": 12
+  },
+  {
+    "slug": "busan-seogu",
+    "reg": "부산",
+    "sig": "서구",
+    "regSlug": "busan",
+    "count": 12
+  },
+  {
+    "slug": "gyeonggi-dongducheonsi",
+    "reg": "경기",
+    "sig": "동두천시",
+    "regSlug": "gyeonggi",
+    "count": 12
+  },
+  {
+    "slug": "gyeonggi-uiwangsi",
+    "reg": "경기",
+    "sig": "의왕시",
+    "regSlug": "gyeonggi",
+    "count": 12
+  },
+  {
+    "slug": "jeonnam-najusi",
+    "reg": "전남",
+    "sig": "나주시",
+    "regSlug": "jeonnam",
+    "count": 11
+  },
+  {
+    "slug": "daegu-dalseonggun",
+    "reg": "대구",
+    "sig": "달성군",
+    "regSlug": "daegu",
+    "count": 11
+  },
+  {
+    "slug": "gangwon-sogchosi",
+    "reg": "강원",
+    "sig": "속초시",
+    "regSlug": "gangwon",
+    "count": 11
+  },
+  {
+    "slug": "incheon-namgu",
+    "reg": "인천",
+    "sig": "남구",
+    "regSlug": "incheon",
+    "count": 11
+  },
+  {
+    "slug": "gyeongnam-sacheonsi",
+    "reg": "경남",
+    "sig": "사천시",
+    "regSlug": "gyeongnam",
+    "count": 10
+  },
+  {
+    "slug": "gyeongbuk-chilgoggun",
+    "reg": "경북",
+    "sig": "칠곡군",
+    "regSlug": "gyeongbuk",
+    "count": 10
+  },
+  {
+    "slug": "chungnam-yesangun",
+    "reg": "충남",
+    "sig": "예산군",
+    "regSlug": "chungnam",
+    "count": 10
+  },
+  {
+    "slug": "gyeongbuk-yeongcheonsi",
+    "reg": "경북",
+    "sig": "영천시",
+    "regSlug": "gyeongbuk",
+    "count": 10
+  },
+  {
+    "slug": "busan-yeongdogu",
+    "reg": "부산",
+    "sig": "영도구",
+    "regSlug": "busan",
+    "count": 10
+  },
+  {
+    "slug": "gangwon-donghaesi",
+    "reg": "강원",
+    "sig": "동해시",
+    "regSlug": "gangwon",
+    "count": 10
+  },
+  {
+    "slug": "gwangju-donggu",
+    "reg": "광주",
+    "sig": "동구",
+    "regSlug": "gwangju",
+    "count": 10
+  },
+  {
+    "slug": "gyeonggi-yangpyeonggun",
+    "reg": "경기",
+    "sig": "양평군",
+    "regSlug": "gyeonggi",
+    "count": 10
+  },
+  {
+    "slug": "gwangju-namgu",
+    "reg": "광주",
+    "sig": "남구",
+    "regSlug": "gwangju",
+    "count": 10
+  },
+  {
+    "slug": "gyeonggi-yeojusi",
+    "reg": "경기",
+    "sig": "여주시",
+    "regSlug": "gyeonggi",
+    "count": 9
+  },
+  {
+    "slug": "chungbuk-eumseonggun",
+    "reg": "충북",
+    "sig": "음성군",
+    "regSlug": "chungbuk",
+    "count": 9
+  },
+  {
+    "slug": "jeonnam-yeongamgun",
+    "reg": "전남",
+    "sig": "영암군",
+    "regSlug": "jeonnam",
+    "count": 8
+  },
+  {
+    "slug": "jeonbuk-namwonsi",
+    "reg": "전북",
+    "sig": "남원시",
+    "regSlug": "jeonbuk",
+    "count": 8
+  },
+  {
+    "slug": "gyeongbuk-yeongjusi",
+    "reg": "경북",
+    "sig": "영주시",
+    "regSlug": "gyeongbuk",
+    "count": 8
+  },
+  {
+    "slug": "chungnam-hongseonggun",
+    "reg": "충남",
+    "sig": "홍성군",
+    "regSlug": "chungnam",
+    "count": 7
+  },
+  {
+    "slug": "chungbuk-ogcheongun",
+    "reg": "충북",
+    "sig": "옥천군",
+    "regSlug": "chungbuk",
+    "count": 7
+  },
+  {
+    "slug": "chungbuk-jincheongun",
+    "reg": "충북",
+    "sig": "진천군",
+    "regSlug": "chungbuk",
+    "count": 7
+  },
+  {
+    "slug": "jeonbuk-jeongeubsi",
+    "reg": "전북",
+    "sig": "정읍시",
+    "regSlug": "jeonbuk",
+    "count": 7
+  },
+  {
+    "slug": "chungnam-boryeongsi",
+    "reg": "충남",
+    "sig": "보령시",
+    "regSlug": "chungnam",
+    "count": 7
+  },
+  {
+    "slug": "gyeongnam-hamangun",
+    "reg": "경남",
+    "sig": "함안군",
+    "regSlug": "gyeongnam",
+    "count": 7
+  },
+  {
+    "slug": "gyeonggi-gapyeonggun",
+    "reg": "경기",
+    "sig": "가평군",
+    "regSlug": "gyeonggi",
+    "count": 7
+  },
+  {
+    "slug": "incheon-donggu",
+    "reg": "인천",
+    "sig": "동구",
+    "regSlug": "incheon",
+    "count": 7
+  },
+  {
+    "slug": "jeonnam-haenamgun",
+    "reg": "전남",
+    "sig": "해남군",
+    "regSlug": "jeonnam",
+    "count": 6
+  },
+  {
+    "slug": "chungnam-buyeogun",
+    "reg": "충남",
+    "sig": "부여군",
+    "regSlug": "chungnam",
+    "count": 6
+  },
+  {
+    "slug": "gyeongbuk-sangjusi",
+    "reg": "경북",
+    "sig": "상주시",
+    "regSlug": "gyeongbuk",
+    "count": 6
+  },
+  {
+    "slug": "chungnam-seocheongun",
+    "reg": "충남",
+    "sig": "서천군",
+    "regSlug": "chungnam",
+    "count": 6
+  },
+  {
+    "slug": "gangwon-samcheogsi",
+    "reg": "강원",
+    "sig": "삼척시",
+    "regSlug": "gangwon",
+    "count": 6
+  },
+  {
+    "slug": "busan-gangseogu",
+    "reg": "부산",
+    "sig": "강서구",
+    "regSlug": "busan",
+    "count": 6
+  },
+  {
+    "slug": "gyeongbuk-mungyeongsi",
+    "reg": "경북",
+    "sig": "문경시",
+    "regSlug": "gyeongbuk",
+    "count": 5
+  },
+  {
+    "slug": "chungnam-taeangun",
+    "reg": "충남",
+    "sig": "태안군",
+    "regSlug": "chungnam",
+    "count": 5
+  },
+  {
+    "slug": "chungnam-gongjusi",
+    "reg": "충남",
+    "sig": "공주시",
+    "regSlug": "chungnam",
+    "count": 5
+  },
+  {
+    "slug": "incheon-ganghwagun",
+    "reg": "인천",
+    "sig": "강화군",
+    "regSlug": "incheon",
+    "count": 5
+  },
+  {
+    "slug": "gyeongnam-milyangsi",
+    "reg": "경남",
+    "sig": "밀양시",
+    "regSlug": "gyeongnam",
+    "count": 5
+  },
+  {
+    "slug": "gangwon-pyeongchanggun",
+    "reg": "강원",
+    "sig": "평창군",
+    "regSlug": "gangwon",
+    "count": 5
+  },
+  {
+    "slug": "jeonnam-muangun",
+    "reg": "전남",
+    "sig": "무안군",
+    "regSlug": "jeonnam",
+    "count": 5
+  },
+  {
+    "slug": "gyeongbuk-uiseonggun",
+    "reg": "경북",
+    "sig": "의성군",
+    "regSlug": "gyeongbuk",
+    "count": 5
+  },
+  {
+    "slug": "chungnam-gyeryongsi",
+    "reg": "충남",
+    "sig": "계룡시",
+    "regSlug": "chungnam",
+    "count": 5
+  }
+]

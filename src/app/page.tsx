@@ -396,6 +396,35 @@ export default function HomePage() {
                   <span>내 주변 명당 지도 보기</span>
                 </button>
               </div>
+
+              {/* 지역별 명당 & 가이드 SEO 내부 링크 허브 */}
+              <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-base font-extrabold text-slate-900">지역별 로또 명당</h3>
+                  <a
+                    href="/guide"
+                    className="text-sm font-bold text-[#10b981] hover:underline"
+                  >
+                    당첨 가이드 &rarr;
+                  </a>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    ['서울', 'seoul'], ['경기', 'gyeonggi'], ['부산', 'busan'], ['인천', 'incheon'],
+                    ['대구', 'daegu'], ['대전', 'daejeon'], ['광주', 'gwangju'], ['울산', 'ulsan'],
+                    ['강원', 'gangwon'], ['충북', 'chungbuk'], ['충남', 'chungnam'], ['전북', 'jeonbuk'],
+                    ['전남', 'jeonnam'], ['경북', 'gyeongbuk'], ['경남', 'gyeongnam'], ['제주', 'jeju'],
+                  ].map(([name, slug]) => (
+                    <a
+                      key={slug}
+                      href={`/region/${slug}`}
+                      className="px-2.5 py-1 rounded-lg bg-slate-50 hover:bg-emerald-50 border border-slate-200 text-xs sm:text-sm font-bold text-slate-700"
+                    >
+                      {name}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         )}
