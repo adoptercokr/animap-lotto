@@ -80,6 +80,25 @@ body {
 .ball-gray   { background-color: #64748b; color: #ffffff; }
 .ball-green  { background-color: #16a34a; color: #ffffff; }
 
+@keyframes ballPop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.2;
+  }
+  65% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-ball-pop {
+  animation: ballPop 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 /* 지도 마커 펄 애니메이션 */
 @keyframes pulse-ring {
   0% { transform: scale(0.95); opacity: 0.8; }

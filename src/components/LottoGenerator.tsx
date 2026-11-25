@@ -45,6 +45,8 @@ export default function LottoGenerator({
   const [savedTickets, setSavedTickets] = useState<SavedTicket[]>([]);
   const [isDownloading, setIsDownloading] = useState(false);
   const [toastMsg, setToastMsg] = useState<string | null>(null);
+  const [genKey, setGenKey] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const ticketRef = useRef<HTMLDivElement>(null);
   const rowLabels = ['A', 'B', 'C', 'D', 'E'];
@@ -122,6 +124,9 @@ export default function LottoGenerator({
     );
     setGames(newGames);
     setGameTypes(['자동', '자동', '자동', '자동', '자동']);
+    setGenKey((k) => k + 1);
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 450);
 
     const label =
       mode === 'store' && targetStore
@@ -130,6 +135,9 @@ export default function LottoGenerator({
         ? '자동 추천'
         : `1등 패턴 (${useSamples}회)`;
     saveHistoryAndServer(newGames, label, targetStore);
+    if (games[0].length > 0) {
+      showToast(`${label} 번호 5게임이 뽑혔습니다.`);
+    }
   };
 
   // 직접 찍기 모드에서 특정 줄에 숫자 클릭
@@ -477,8 +485,13 @@ export default function LottoGenerator({
         </div>
       )}
 
-      {/* 4. 캡처용 로또 영수증 티켓 */}
-      <div ref={ticketRef} className="receipt-paper receipt-sawtooth rounded-2xl p-5 sm:p-6 shadow-sm">
+      {/* 4. 캡처용 로또 영수증 티켓 (생성 시 테두리 하이라이트 + 볼 순차 팝인) */}
+      <div
+        ref={ticketRef}
+        className={`receipt-paper receipt-sawtooth rounded-2xl p-5 sm:p-6 shadow-sm transition-all duration-300 ${
+          isAnimating ? 'ring-2 ring-[#10b981] ring-offset-2' : ''
+        }`}
+      >
         <div className="text-center border-b-2 border-dashed border-slate-200 pb-4 mb-4">
           <h4 className="text-2xl font-black text-slate-900">이번 주 행운 번호</h4>
           <p className="text-sm text-slate-600 font-semibold mt-1">
@@ -513,12 +526,13 @@ export default function LottoGenerator({
                 {nums.length === 0 ? (
                   <span className="text-sm text-slate-400 font-medium">번호를 선택하세요</span>
                 ) : (
-                  nums.map((n) => (
+                  nums.map((n, bIdx) => (
                     <span
-                      key={n}
-                      className={`lotto-ball w-9 h-9 sm:w-10 sm:h-10 text-sm sm:text-base font-black ${getBallColorClass(
-                        n
-                      )}`}
+                      key={`${genKey}-${idx}-${bIdx}-${n}`}
+                      style={{ animationDelay: `${idx * 45 + bIdx * 25}ms` }}
+                      className={`lotto-ball w-9 h-9 sm:w-10 sm:h-10 text-sm sm:text-base font-black ${
+                        activeMode !== 'manual' ? 'animate-ball-pop' : ''
+                      } ${getBallColorClass(n)}`}
                     >
                       {n}
                     </span>
@@ -545,7 +559,7 @@ export default function LottoGenerator({
           }
           className="py-2.5 sm:py-3 px-3 sm:px-4 bg-[#10b981] hover:bg-[#059669] active:scale-[0.98] text-white rounded-xl font-bold text-sm sm:text-[15px] flex items-center justify-center gap-1.5 transition-all"
         >
-          <RefreshCw className="w-4 h-4" />
+          <RefreshCw className={`w-4 h-4 ${isAnimating ? 'animate-spin' : ''}`} />
           <span>{activeMode === 'manual' ? '나머지 채우기' : '새 번호 뽑기'}</span>
         </button>
 
