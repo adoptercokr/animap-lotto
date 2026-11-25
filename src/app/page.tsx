@@ -69,9 +69,15 @@ export default function HomePage() {
   const [rankingPeriod, setRankingPeriod] = useState<PeriodFilter>('all');
   const [sortBy, setSortBy] = useState<'count' | 'distance'>('count');
 
-  // 문의하기 모달
+  // 문의하기 모달 (애니맵·위집 동일 규격 2-Tab + 실제 메일 발송)
   const [showContactModal, setShowContactModal] = useState(false);
+  const [contactType, setContactType] = useState<'general' | 'ad'>('general');
+  const [contactTitle, setContactTitle] = useState('');
+  const [contactInfo, setContactInfo] = useState('');
+  const [contactCompany, setContactCompany] = useState('');
   const [contactText, setContactText] = useState('');
+  const [contactSending, setContactSending] = useState(false);
+  const [contactError, setContactError] = useState<string | null>(null);
   const [contactSent, setContactSent] = useState(false);
 
   useEffect(() => {
@@ -252,6 +258,10 @@ export default function HomePage() {
             <button
               onClick={() => {
                 setContactSent(false);
+                setContactError(null);
+                setContactTitle('');
+                setContactInfo('');
+                setContactCompany('');
                 setContactText('');
                 setShowContactModal(true);
               }}
@@ -702,27 +712,32 @@ export default function HomePage() {
         )}
       </main>
 
-      {/* 문의하기 모달 */}
+      {/* 문의하기 모달 (애니맵·위집 동일 규격 2-Tab + 실시간 메일 발송) */}
       {showContactModal && (
         <div className="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-extrabold text-slate-900">문의하기</h3>
+          <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 max-h-[90vh] overflow-y-auto">
+            <div className="flex items-center justify-between mb-3">
+              <div>
+                <h3 className="text-xl font-black text-slate-900">빠른 간편 문의 &amp; 제안</h3>
+                <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
+                  회원가입 없이 연락처와 내용만 남기시면 확인 후 신속히 회신드립니다.
+                </p>
+              </div>
               <button
                 onClick={() => setShowContactModal(false)}
-                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100"
+                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 shrink-0"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             {contactSent ? (
-              <div className="py-8 text-center">
-                <p className="text-base font-extrabold text-[#10b981] mb-2">
+              <div className="py-10 text-center">
+                <p className="text-lg font-black text-[#10b981] mb-2">
                   문의가 정상적으로 접수되었습니다.
                 </p>
-                <p className="text-sm text-slate-600 mb-5">
-                  검토 후 빠르게 반영하겠습니다. 감사합니다.
+                <p className="text-sm text-slate-600 mb-6">
+                  기재해 주신 연락처로 확인 후 빠르게 답변드리겠습니다. 감사합니다.
                 </p>
                 <button
                   onClick={() => setShowContactModal(false)}
@@ -733,24 +748,125 @@ export default function HomePage() {
               </div>
             ) : (
               <form
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
-                  if (!contactText.trim()) return;
-                  setContactSent(true);
+                  if (!contactInfo.trim() || !contactText.trim() || contactSending) return;
+                  setContactSending(true);
+                  setContactError(null);
+                  try {
+                    const res = await fetch('/api/contact', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        type: contactType,
+                        title: contactTitle,
+                        contact: contactInfo,
+                        company: contactCompany,
+                        message: contactText,
+                      }),
+                    });
+                    const data = await res.json();
+                    if (res.ok && data.success) {
+                      setContactSent(true);
+                    } else {
+                      setContactError(data.error || '문의 발송 중 오류가 발생했습니다.');
+                    }
+                  } catch {
+                    setContactError('네트워크 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
+                  } finally {
+                    setContactSending(false);
+                  }
                 }}
                 className="flex flex-col gap-3"
               >
-                <p className="text-sm text-slate-600">
-                  판매점 정보 수정, 신규 명당 등록 요청, 오류 제보 또는 제휴 문의를 남겨주세요.
-                </p>
-                <textarea
-                  rows={4}
-                  value={contactText}
-                  onChange={(e) => setContactText(e.target.value)}
-                  placeholder="문의 내용을 입력해 주세요 (연락처를 함께 적어주시면 답변드리겠습니다)"
-                  className="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981]"
-                  required
-                />
+                {/* 2-Tab 선택 */}
+                <div className="grid grid-cols-2 gap-2 bg-slate-100 p-1 rounded-xl">
+                  <button
+                    type="button"
+                    onClick={() => setContactType('general')}
+                    className={`py-2.5 rounded-lg text-xs sm:text-sm font-extrabold transition-colors ${
+                      contactType === 'general'
+                        ? 'bg-white text-slate-900 shadow-xs'
+                        : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                  >
+                    일반 문의 · 판매점 제보
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setContactType('ad')}
+                    className={`py-2.5 rounded-lg text-xs sm:text-sm font-extrabold transition-colors ${
+                      contactType === 'ad'
+                        ? 'bg-white text-slate-900 shadow-xs'
+                        : 'text-slate-600 hover:text-slate-900'
+                    }`}
+                  >
+                    광고 · 비즈니스 제휴
+                  </button>
+                </div>
+
+                {contactType === 'ad' && (
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">업체명 / 담당자명</label>
+                    <input
+                      type="text"
+                      value={contactCompany}
+                      onChange={(e) => setContactCompany(e.target.value)}
+                      placeholder="예: (주)OOO 마케팅팀"
+                      className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981]"
+                    />
+                  </div>
+                )}
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">
+                    회신받으실 연락처 (이메일 또는 휴대폰 번호) <span className="text-rose-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={contactInfo}
+                    onChange={(e) => setContactInfo(e.target.value)}
+                    placeholder="예: name@example.com 또는 010-1234-5678"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981]"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">문의 제목</label>
+                  <input
+                    type="text"
+                    value={contactTitle}
+                    onChange={(e) => setContactTitle(e.target.value)}
+                    placeholder={
+                      contactType === 'ad'
+                        ? '예: 배너 광고 및 제휴 문의드립니다'
+                        : '예: 판매점 위치 수정 또는 기능 제안'
+                    }
+                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981]"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">
+                    문의 내용 <span className="text-rose-500">*</span>
+                  </label>
+                  <textarea
+                    rows={4}
+                    value={contactText}
+                    onChange={(e) => setContactText(e.target.value)}
+                    placeholder="자세한 문의 내용을 입력해 주세요."
+                    className="w-full p-3.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#10b981]"
+                    required
+                  />
+                </div>
+
+                {contactError && (
+                  <p className="text-xs font-bold text-rose-600 bg-rose-50 p-2.5 rounded-lg">
+                    {contactError}
+                  </p>
+                )}
+
                 <div className="flex justify-end gap-2 mt-2">
                   <button
                     type="button"
@@ -761,9 +877,10 @@ export default function HomePage() {
                   </button>
                   <button
                     type="submit"
-                    className="px-5 py-2.5 rounded-xl bg-[#10b981] hover:bg-[#059669] text-white text-sm font-extrabold"
+                    disabled={contactSending}
+                    className="px-6 py-2.5 rounded-xl bg-[#10b981] hover:bg-[#059669] text-white text-sm font-extrabold disabled:opacity-50"
                   >
-                    보내기
+                    {contactSending ? '전송 중...' : '문의 접수하기'}
                   </button>
                 </div>
               </form>
