@@ -247,22 +247,13 @@ export default function HomeClient({ initialStores, initialHistory }: HomeClient
             </button>
           </nav>
 
-          {/* 문의하기 버튼 (PC 전용: 모바일에서는 최하단 푸터로 이동) */}
-          <button
-            onClick={() => {
-              setContactSent(false);
-              setContactError(null);
-              setContactTitle('');
-              setContactInfo('');
-              setContactCompany('');
-              setContactText('');
-              setShowContactModal(true);
-            }}
-            className="hidden md:flex px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-bold items-center gap-1.5 shrink-0 transition-colors"
+          {/* 당첨가이드 버튼 (PC 전용, SubHeader와 100% 통일) */}
+          <a
+            href="/guide"
+            className="hidden md:flex px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-bold items-center shrink-0 transition-colors"
           >
-            <Mail className="w-4 h-4 text-slate-500" strokeWidth={1.75} />
-            <span>문의하기</span>
-          </button>
+            당첨가이드
+          </a>
         </div>
       </header>
 
