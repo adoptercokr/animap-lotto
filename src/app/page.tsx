@@ -179,12 +179,14 @@ export default function HomePage() {
 
   return (
     <div className="h-screen w-screen flex flex-col overflow-hidden bg-slate-50">
-      {/* 1. 실시간 안내 바 */}
-      <WinningTicker
-        latestDrawNo={latestDraw?.draw_no || 1251}
-        latestPrize={latestDraw?.divisions?.[0]?.prize || 2068843286}
-        totalStoresCount={stores.length}
-      />
+      {/* 1. 실시간 안내 바 (지도 모드에서는 상단 공간 확보를 위해 숨김) */}
+      {activeTab !== 'map' && (
+        <WinningTicker
+          latestDrawNo={latestDraw?.draw_no || 1251}
+          latestPrize={latestDraw?.divisions?.[0]?.prize || 2068843286}
+          totalStoresCount={stores.length}
+        />
+      )}
 
       {/* 2. 상단 브랜드 & 네비게이션 (모바일 1줄 컴팩트 + PC 1줄) */}
       <header className="bg-white border-b border-slate-200 shrink-0 z-30">

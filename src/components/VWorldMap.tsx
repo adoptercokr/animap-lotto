@@ -5,7 +5,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import Supercluster from 'supercluster';
 import { LottoStore, PeriodFilter } from '../types/lotto';
-import { Crosshair, Plus, Minus, RotateCcw, Layers, Search, RefreshCw, Award } from 'lucide-react';
+import { Crosshair, Plus, Minus, RotateCcw, Layers, Search, RefreshCw, Award, SlidersHorizontal } from 'lucide-react';
 
 interface VWorldMapProps {
   stores: LottoStore[];
@@ -42,6 +42,7 @@ export default function VWorldMap({
   const [mapType, setMapType] = useState<'BASE' | 'HYBRID'>('BASE');
   const [period, setPeriod] = useState<PeriodFilter>('all');
   const [minWins, setMinWins] = useState<number>(0); // 0=전체, 3, 5, 10, 15
+  const [showFilters, setShowFilters] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeSearch, setActiveSearch] = useState('');
   const [showSearchHere, setShowSearchHere] = useState(false);
@@ -124,7 +125,7 @@ export default function VWorldMap({
         const store: LottoStore = feat.properties.store;
         const isSelected = selectedStore?.id === store.id;
         const displayCnt = getPeriodCount(store, period);
-        const periodTag = period === '1y' ? '1년' : period === '6m' ? '6개월' : period === '3m' ? '3개월' : '1등';
+        const periodTag = period === '1y' ? '1년 1등' : period === '6m' ? '6개월 1등' : period === '3m' ? '3개월 1등' : '1등';
 
         let html = '';
         if ((period === 'all' && store.grd === '다이아') || (period !== 'all' && displayCnt >= 3)) {
@@ -141,7 +142,7 @@ export default function VWorldMap({
           html = `
             <div style="cursor:pointer;display:flex;flex-direction:column;align-items:center;transform:${isSelected ? 'scale(1.18)' : 'scale(1)'};">
               <div style="background:#fff;color:#0f172a;border:2px solid #10b981;padding:3px 7px;border-radius:10px;font-size:12px;font-weight:700;box-shadow:0 3px 8px rgba(0,0,0,0.16);display:flex;align-items:center;gap:4px;white-space:nowrap;">
-                <span>${store.name}</span><span style="color:#059669;font-weight:800;">${displayCnt}회</span>
+                <span>${store.name}</span><span style="color:#059669;font-weight:800;">${periodTag} ${displayCnt}회</span>
               </div>
               <div style="width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #10b981;margin-top:-1px;"></div>
             </div>
@@ -297,99 +298,130 @@ export default function VWorldMap({
     <div className="relative w-full h-full bg-slate-100">
       <div ref={containerRef} className="w-full h-full z-10" />
 
-      {/* 상단 좌측: 검색바 + 기간별 필터 + 1등 횟수 필터 */}
-      <div className="absolute left-3.5 right-3.5 sm:right-auto top-3.5 z-20 flex flex-col gap-2 max-w-md">
-        <form onSubmit={handleSearchSubmit} className="flex items-center gap-1.5 bg-white rounded-xl shadow-md border border-slate-200 p-1.5">
-          <Search className="w-4 h-4 text-slate-500 ml-2 shrink-0" />
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-              if (e.target.value === '') setActiveSearch('');
-            }}
-            placeholder="동네(강남, 노원) 또는 판매점 검색"
-            className="w-full text-base font-medium text-slate-800 px-1.5 py-1 focus:outline-none"
-          />
-          {activeSearch && (
-            <button
-              type="button"
-              onClick={() => {
-                setSearchTerm('');
-                setActiveSearch('');
-                onSelectStore(null);
+      {/* 상단 좌측: 검색바 + 접이식 필터 토글 (모바일 화면 가림 최소화: 기본 1줄) */}
+      <div className="absolute left-3 right-3 sm:right-auto top-3 z-20 flex flex-col gap-2 max-w-md">
+        <div className="flex items-center gap-1.5">
+          <form onSubmit={handleSearchSubmit} className="flex-1 flex items-center gap-1 bg-white rounded-xl shadow-md border border-slate-200 p-1.5 min-w-0">
+            <Search className="w-4 h-4 text-slate-500 ml-1.5 shrink-0" />
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                if (e.target.value === '') setActiveSearch('');
               }}
-              className="text-xs font-bold text-rose-600 hover:text-rose-700 px-2 py-1 bg-rose-50 rounded-lg shrink-0"
+              placeholder="동네 또는 판매점 검색"
+              className="w-full text-sm sm:text-base font-medium text-slate-800 px-1 py-1 focus:outline-none min-w-0"
+            />
+            {activeSearch && (
+              <button
+                type="button"
+                onClick={() => {
+                  setSearchTerm('');
+                  setActiveSearch('');
+                  onSelectStore(null);
+                }}
+                className="text-xs font-bold text-rose-600 px-1.5 py-1 bg-rose-50 rounded-lg shrink-0"
+              >
+                초기화
+              </button>
+            )}
+            <button
+              type="submit"
+              className="px-3 py-1.5 bg-[#10b981] hover:bg-[#059669] text-white text-xs sm:text-sm font-extrabold rounded-lg shrink-0 transition-colors"
             >
-              전체보기
+              검색
             </button>
-          )}
+          </form>
+
+          {/* 필터 토글 버튼 */}
           <button
-            type="submit"
-            className="px-3.5 py-1.5 bg-[#10b981] hover:bg-[#059669] text-white text-xs sm:text-sm font-extrabold rounded-lg shrink-0 transition-colors"
+            type="button"
+            onClick={() => setShowFilters((prev) => !prev)}
+            className={`px-3 py-2.5 rounded-xl shadow-md border text-xs sm:text-sm font-extrabold flex items-center gap-1 shrink-0 transition-colors ${
+              showFilters || period !== 'all' || minWins > 0
+                ? 'bg-slate-900 text-white border-slate-900'
+                : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'
+            }`}
           >
-            검색
+            <SlidersHorizontal className="w-4 h-4" />
+            <span>
+              {period !== 'all' || minWins > 0
+                ? `${period === '1y' ? '1년' : period === '6m' ? '6개월' : period === '3m' ? '3개월' : '누적'}${
+                    minWins > 0 ? `·1등${minWins}+` : ''
+                  }`
+                : '필터'}
+            </span>
           </button>
-        </form>
-
-        {/* 기간별 필터 (전체 / 최근 1년 / 6개월 / 3개월) */}
-        <div className="flex items-center gap-1 bg-white/95 backdrop-blur-sm p-1 rounded-xl shadow-sm border border-slate-200 overflow-x-auto no-scrollbar">
-          {[
-            { label: '전체 누적', val: 'all' as const },
-            { label: '최근 1년', val: '1y' as const },
-            { label: '최근 6개월', val: '6m' as const },
-            { label: '최근 3개월', val: '3m' as const },
-          ].map((opt) => (
-            <button
-              key={opt.val}
-              onClick={() => {
-                setPeriod(opt.val);
-                setMinWins(0);
-                setAreaTopStores(null);
-              }}
-              className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
-                period === opt.val
-                  ? 'bg-slate-900 text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
-              }`}
-            >
-              {opt.label}
-            </button>
-          ))}
         </div>
 
-        {/* 당첨 횟수별 필터 (전체 누적 모드일 때 주로 3/5/10/15+, 기간 모드일 때는 1/2/3+) */}
-        <div className="flex items-center gap-1 bg-white/95 backdrop-blur-sm p-1 rounded-xl shadow-sm border border-slate-200 overflow-x-auto no-scrollbar">
-          {(period === 'all'
-            ? [
-                { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
-                { label: '3회+', val: 3 },
-                { label: '5회+', val: 5 },
-                { label: '10회+', val: 10 },
-                { label: '15회+', val: 15 },
-              ]
-            : [
-                { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
-                { label: '2회 이상', val: 2 },
-                { label: '3회 이상', val: 3 },
-              ]
-          ).map((opt) => (
-            <button
-              key={opt.val}
-              onClick={() => {
-                setMinWins(opt.val);
-                setAreaTopStores(null);
-              }}
-              className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
-                minWins === opt.val
-                  ? 'bg-[#10b981] text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
-              }`}
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
+        {/* 접이식 필터 패널 */}
+        {showFilters && (
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg border border-slate-200 p-3 flex flex-col gap-2.5">
+            <div>
+              <span className="text-[11px] font-bold text-slate-500 block mb-1">당첨 기간</span>
+              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
+                {[
+                  { label: '전체 누적', val: 'all' as const },
+                  { label: '최근 1년', val: '1y' as const },
+                  { label: '최근 6개월', val: '6m' as const },
+                  { label: '최근 3개월', val: '3m' as const },
+                ].map((opt) => (
+                  <button
+                    key={opt.val}
+                    onClick={() => {
+                      setPeriod(opt.val);
+                      setMinWins(0);
+                      setAreaTopStores(null);
+                    }}
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
+                      period === opt.val
+                        ? 'bg-slate-900 text-white'
+                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <span className="text-[11px] font-bold text-slate-500 block mb-1">1등 당첨 횟수</span>
+              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
+                {(period === 'all'
+                  ? [
+                      { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
+                      { label: '1등 3회+', val: 3 },
+                      { label: '1등 5회+', val: 5 },
+                      { label: '1등 10회+', val: 10 },
+                      { label: '1등 15회+', val: 15 },
+                    ]
+                  : [
+                      { label: `전체 (${visibleStores.length.toLocaleString()})`, val: 0 },
+                      { label: '1등 2회+', val: 2 },
+                      { label: '1등 3회+', val: 3 },
+                    ]
+                ).map((opt) => (
+                  <button
+                    key={opt.val}
+                    onClick={() => {
+                      setMinWins(opt.val);
+                      setAreaTopStores(null);
+                    }}
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-extrabold shrink-0 transition-colors ${
+                      minWins === opt.val
+                        ? 'bg-[#10b981] text-white'
+                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                    }`}
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 하단 중앙: 현 지도에서 명당 검색 플로팅 버튼 */}
@@ -435,7 +467,7 @@ export default function VWorldMap({
                     <p className="text-xs text-slate-500 truncate">{s.addr}</p>
                   </div>
                   <span className="inline-flex items-center gap-1 px-2.5 py-0.5 bg-[#10b981] text-white rounded-full text-xs font-extrabold shrink-0">
-                    <Award className="w-3 h-3" /> {getPeriodCount(s, period)}회
+                    <Award className="w-3 h-3" /> 1등 {getPeriodCount(s, period)}회
                   </span>
                 </div>
               ))}
