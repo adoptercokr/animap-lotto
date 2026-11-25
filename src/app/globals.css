@@ -57,6 +57,14 @@ body {
   background: #94a3b8;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* 로또 볼 스타일 (음영 없는 깔끔한 단색 플랫 디자인) */
 .lotto-ball {
   display: inline-flex;

@@ -180,30 +180,96 @@ export default function HomePage() {
         totalStoresCount={stores.length}
       />
 
-      {/* 2. 상단 브랜드 & 네비게이션 (본문과 동일한 max-w-5xl 좌우 라인 정렬) */}
+      {/* 2. 상단 브랜드 & 네비게이션 (모바일 2단 가로 스크롤 지원) */}
       <header className="bg-white border-b border-slate-200 shrink-0 z-30">
-        <div className="max-w-5xl mx-auto px-4 h-16 sm:h-18 flex items-center justify-between gap-3">
-          {/* 로고 (메뉴보다 크고 묵직하게) */}
-          <div
-            onClick={() => setActiveTab('generator')}
-            className="flex items-center gap-2.5 cursor-pointer shrink-0"
-          >
-            <div className="w-10 h-10 rounded-xl bg-[#10b981] flex items-center justify-center text-white font-black text-xl">
-              L
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="h-14 sm:h-16 flex items-center justify-between gap-3">
+            {/* 로고 */}
+            <div
+              onClick={() => setActiveTab('generator')}
+              className="flex items-center gap-2.5 cursor-pointer shrink-0"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#10b981] flex items-center justify-center text-white font-black text-lg sm:text-xl">
+                L
+              </div>
+              <span className="font-black text-slate-900 text-xl sm:text-2xl tracking-tight">
+                로또명당
+              </span>
             </div>
-            <span className="font-black text-slate-900 text-xl sm:text-2xl tracking-tight">
-              로또명당
-            </span>
+
+            {/* 4대 메인 탭 (PC 및 태블릿) */}
+            <nav className="hidden md:flex items-center gap-1.5">
+              <button
+                onClick={() => setActiveTab('generator')}
+                className={`px-4 py-2 rounded-xl text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+                  activeTab === 'generator'
+                    ? 'bg-[#10b981] text-white'
+                    : 'text-slate-700 hover:bg-slate-100'
+                }`}
+              >
+                <Ticket className="w-4 h-4" strokeWidth={1.75} />
+                <span>번호 뽑기</span>
+              </button>
+
+              <button
+                onClick={() => setActiveTab('ranking')}
+                className={`px-4 py-2 rounded-xl text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+                  activeTab === 'ranking'
+                    ? 'bg-[#10b981] text-white'
+                    : 'text-slate-700 hover:bg-slate-100'
+                }`}
+              >
+                <Trophy className="w-4 h-4" strokeWidth={1.75} />
+                <span>명당 순위</span>
+              </button>
+
+              <button
+                onClick={() => setActiveTab('map')}
+                className={`px-4 py-2 rounded-xl text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+                  activeTab === 'map'
+                    ? 'bg-[#10b981] text-white'
+                    : 'text-slate-700 hover:bg-slate-100'
+                }`}
+              >
+                <MapIcon className="w-4 h-4" strokeWidth={1.75} />
+                <span>명당 지도</span>
+              </button>
+
+              <button
+                onClick={() => setActiveTab('history')}
+                className={`px-4 py-2 rounded-xl text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+                  activeTab === 'history'
+                    ? 'bg-[#10b981] text-white'
+                    : 'text-slate-700 hover:bg-slate-100'
+                }`}
+              >
+                <History className="w-4 h-4" strokeWidth={1.75} />
+                <span>당첨 번호</span>
+              </button>
+            </nav>
+
+            {/* 문의하기 버튼 */}
+            <button
+              onClick={() => {
+                setContactSent(false);
+                setContactText('');
+                setShowContactModal(true);
+              }}
+              className="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs sm:text-sm font-bold flex items-center gap-1.5 shrink-0 transition-colors"
+            >
+              <Mail className="w-4 h-4 text-slate-500" strokeWidth={1.75} />
+              <span>문의하기</span>
+            </button>
           </div>
 
-          {/* 4대 메인 탭 (PC 및 태블릿) */}
-          <nav className="hidden sm:flex items-center gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar">
+          {/* 모바일 전용 최상단 가로 스크롤 메뉴 바 */}
+          <nav className="flex md:hidden items-center gap-1.5 pb-2.5 overflow-x-auto no-scrollbar">
             <button
               onClick={() => setActiveTab('generator')}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-sm sm:text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+              className={`px-3.5 py-2 rounded-xl text-sm font-bold flex items-center gap-1.5 shrink-0 whitespace-nowrap transition-colors ${
                 activeTab === 'generator'
                   ? 'bg-[#10b981] text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
+                  : 'bg-slate-100 text-slate-700'
               }`}
             >
               <Ticket className="w-4 h-4" strokeWidth={1.75} />
@@ -212,10 +278,10 @@ export default function HomePage() {
 
             <button
               onClick={() => setActiveTab('ranking')}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-sm sm:text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+              className={`px-3.5 py-2 rounded-xl text-sm font-bold flex items-center gap-1.5 shrink-0 whitespace-nowrap transition-colors ${
                 activeTab === 'ranking'
                   ? 'bg-[#10b981] text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
+                  : 'bg-slate-100 text-slate-700'
               }`}
             >
               <Trophy className="w-4 h-4" strokeWidth={1.75} />
@@ -224,10 +290,10 @@ export default function HomePage() {
 
             <button
               onClick={() => setActiveTab('map')}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-sm sm:text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+              className={`px-3.5 py-2 rounded-xl text-sm font-bold flex items-center gap-1.5 shrink-0 whitespace-nowrap transition-colors ${
                 activeTab === 'map'
                   ? 'bg-[#10b981] text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
+                  : 'bg-slate-100 text-slate-700'
               }`}
             >
               <MapIcon className="w-4 h-4" strokeWidth={1.75} />
@@ -236,29 +302,16 @@ export default function HomePage() {
 
             <button
               onClick={() => setActiveTab('history')}
-              className={`px-3 sm:px-4 py-2 rounded-xl text-sm sm:text-base font-bold flex items-center gap-1.5 shrink-0 transition-colors ${
+              className={`px-3.5 py-2 rounded-xl text-sm font-bold flex items-center gap-1.5 shrink-0 whitespace-nowrap transition-colors ${
                 activeTab === 'history'
                   ? 'bg-[#10b981] text-white'
-                  : 'text-slate-700 hover:bg-slate-100'
+                  : 'bg-slate-100 text-slate-700'
               }`}
             >
               <History className="w-4 h-4" strokeWidth={1.75} />
               <span>당첨 번호</span>
             </button>
           </nav>
-
-          {/* 문의하기 버튼 */}
-          <button
-            onClick={() => {
-              setContactSent(false);
-              setContactText('');
-              setShowContactModal(true);
-            }}
-            className="px-3 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-600 text-xs sm:text-sm font-bold flex items-center gap-1.5 shrink-0 transition-colors"
-          >
-            <Mail className="w-4 h-4 text-slate-500" strokeWidth={1.75} />
-            <span className="hidden sm:inline">문의하기</span>
-          </button>
         </div>
       </header>
 
