@@ -38,12 +38,21 @@ export const metadata: Metadata = {
     siteName: "로또명당",
     type: "website",
     locale: "ko_KR",
+    images: [
+      {
+        url: "https://lotto.animap.co.kr/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "로또명당 - 전국 로또 1등 명당 지도 및 반자동 번호 생성기",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "로또명당 - 전국 로또 1등 명당 지도 · 로또 번호 생성기",
     description:
       "전국 로또 1등 배출 명당 지도와 기간별 순위, 반자동 로또 번호 뽑기를 한 번에 확인하세요.",
+    images: ["https://lotto.animap.co.kr/og-image.png"],
   },
 };
 
