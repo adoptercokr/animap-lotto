@@ -1,0 +1,72 @@
+# 로또명당 전체 데이터셋 & AI 색인 가이드 (llms-full.txt)
+> 대한민국 전국 4,735개 로또 1등 배출 판매점 전수 데이터, 17개 시·도 및 165개 시·군·구별 명당 상세 정보, 기간별(전체/최근 1년/6개월/3개월) 신흥 명당 순위, 반자동 로또 번호 생성 알고리즘
+
+- 서비스 공식 URL: https://lotto.animap.co.kr
+- 라이선스 및 데이터 출처: 동행복권 공공데이터 및 VWorld 공간정보 기반 매주 토요일 21:00 자동 동기화
+
+---
+
+## 1. 주요 서비스 및 핵심 페이지
+- 메인 (번호 뽑기 · 지도 검색 · 기간별 순위): https://lotto.animap.co.kr
+- 당첨 가이드 (역대 1등 명당 TOP 20, 세금 계산표, 당첨금 수령 절차): https://lotto.animap.co.kr/guide
+- RSS 피드: https://lotto.animap.co.kr/rss.xml
+- 사이트맵: https://lotto.animap.co.kr/sitemap.xml
+- AI 요약 가이드: https://lotto.animap.co.kr/llms.txt
+
+---
+
+## 2. 전국 17개 광역 시·도별 로또 명당 허브
+- 서울 로또 명당: https://lotto.animap.co.kr/region/seoul
+- 경기 로또 명당: https://lotto.animap.co.kr/region/gyeonggi
+- 부산 로또 명당: https://lotto.animap.co.kr/region/busan
+- 인천 로또 명당: https://lotto.animap.co.kr/region/incheon
+- 대구 로또 명당: https://lotto.animap.co.kr/region/daegu
+- 대전 로또 명당: https://lotto.animap.co.kr/region/daejeon
+- 광주 로또 명당: https://lotto.animap.co.kr/region/gwangju
+- 울산 로또 명당: https://lotto.animap.co.kr/region/ulsan
+- 세종 로또 명당: https://lotto.animap.co.kr/region/sejong
+- 강원 로또 명당: https://lotto.animap.co.kr/region/gangwon
+- 충북 로또 명당: https://lotto.animap.co.kr/region/chungbuk
+- 충남 로또 명당: https://lotto.animap.co.kr/region/chungnam
+- 전북 로또 명당: https://lotto.animap.co.kr/region/jeonbuk
+- 전남 로또 명당: https://lotto.animap.co.kr/region/jeonnam
+- 경북 로또 명당: https://lotto.animap.co.kr/region/gyeongbuk
+- 경남 로또 명당: https://lotto.animap.co.kr/region/gyeongnam
+- 제주 로또 명당: https://lotto.animap.co.kr/region/jeju
+
+---
+
+## 3. 수도권 및 주요 대도시 핵심 시·군·구 페이지 (165개 구군)
+- 서울 노원구 명당 (스파 53회 배출 등): https://lotto.animap.co.kr/area/seoul-nowongu
+- 서울 송파구 명당 (잠실매점 등): https://lotto.animap.co.kr/area/seoul-songpagu
+- 서울 종로구 명당 (종로 가판 등): https://lotto.animap.co.kr/area/seoul-jongnogu
+- 서울 강남구 명당: https://lotto.animap.co.kr/area/seoul-gangnamgu
+- 경기 용인시 명당 (로또휴게실 등): https://lotto.animap.co.kr/area/gyeonggi-yonginsi
+- 경기 수원시 명당: https://lotto.animap.co.kr/area/gyeonggi-suwonsi
+- 경기 고양시 명당: https://lotto.animap.co.kr/area/gyeonggi-goyangsi
+- 부산 동구 명당 (부일카서비스 51회 배출 등): https://lotto.animap.co.kr/area/busan-donggu
+- 부산 기장군 명당 (뉴빅마트 등): https://lotto.animap.co.kr/area/busan-gijanggun
+- 대구 달서구 명당 (일등복권편의점 등): https://lotto.animap.co.kr/area/daegu-dalseogu
+- 충남 아산시 명당 (로또명당인주점 34회 배출 등): https://lotto.animap.co.kr/area/chungnam-asansi
+
+---
+
+## 4. 대한민국 역대 로또 1등 최다 배출점 TOP 20
+1. 스파 (서울 노원구 동일로 1493) - 1등 53회
+2. 부일카서비스 (부산 동구 자성로133번길 35) - 1등 51회
+3. 로또명당인주점 (충남 아산시 서해로 519-2) - 1등 34회
+4. 일등복권편의점 (대구 달서구 대명로 20) - 1등 31회
+5. 뉴빅마트 (부산 기장군 차성동로 69) - 1등 30회
+6. 로또휴게실 (경기 용인시 기흥구 용구대로 1885) - 1등 27회
+7. 세진전자통신 (대구 서구 서대구로 156) - 1등 24회
+8. 잠실매점 (서울 송파구 올림픽로 269) - 1등 22회
+9. 목동식품 (서울 양천구 중앙로 234) - 1등 21회
+10. 행운복권방보령점 (충남 보령시 대청로 8) - 1등 19회
+
+---
+
+## 5. 로또 당첨금 세율 및 수령 안내
+- 200만 원 이하 (3등~5등): 비과세 (세금 0%)
+- 200만 원 초과 ~ 3억 원 이하: 22% (소득세 20% + 주민세 2%)
+- 3억 원 초과분: 33% (소득세 30% + 주민세 3%)
+- 1등 수령처: NH농협은행 본점 (서울 중구 통일로 120), 당첨복권 실물 및 신분증 지참 필수
