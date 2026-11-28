@@ -2,8 +2,22 @@ name: Weekly Lotto Data Auto Update
 
 on:
   schedule:
-    # 매주 토요일 21:30 KST (UTC 12:30) & 일요일 09:00 KST (UTC 00:00)
+    # 한국시간(KST) = UTC + 9
+    # 토요일 20:50 KST (UTC 11:50) - 로또 방송 직후 최초 시도
+    - cron: '50 11 * * 6'
+    # 토요일 21:10 KST (UTC 12:10) - 동행복권 집계 1차 시도
+    - cron: '10 12 * * 6'
+    # 토요일 21:30 KST (UTC 12:30) - 판매점 집계 2차 시도
     - cron: '30 12 * * 6'
+    # 토요일 22:00 KST (UTC 13:00) - 판매점 집계 3차 시도
+    - cron: '0 13 * * 6'
+    # 토요일 22:30 KST (UTC 13:30) - 판매점 집계 4차 시도
+    - cron: '30 13 * * 6'
+    # 토요일 23:30 KST (UTC 14:30) - 심야 최종 보정
+    - cron: '30 14 * * 6'
+    # 일요일 02:00 KST (UTC 17:00 토요일) - 새벽 백업 체크
+    - cron: '0 17 * * 6'
+    # 일요일 09:00 KST (UTC 00:00 일요일) - 아침 백업 체크
     - cron: '0 0 * * 0'
   workflow_dispatch:
 
@@ -15,6 +29,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,7 +42,12 @@ jobs:
 
       - name: Commit and push if updated
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Lotto Auto Updater"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add public/data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update weekly lotto winning data" && git push)
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: auto-update weekly lotto winning numbers and stores"
+            git push origin main
+          fi

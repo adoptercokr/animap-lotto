@@ -2,2101 +2,2101 @@
   {
     "id": "인터넷 복권판매사이트_온라인_동행복권",
     "name": "인터넷 복권판매사이트",
-    "address": "동행복권(dhlottery.co.kr)",
+    "addr": "동행복권(dhlottery.co.kr)",
     "lat": 37.482063,
     "lng": 127.015785,
-    "region": "온라인",
-    "sigungu": "동행복권",
-    "count_1st": 134,
-    "auto_count": 65,
-    "manual_count": 66,
-    "semi_auto_count": 3,
-    "recent_draws": [
-      1248,
-      1248,
-      1246,
-      1246,
-      1245
+    "reg": "온라인",
+    "sig": "동행복권",
+    "cnt": 137,
+    "c1y": 37,
+    "c6m": 19,
+    "c3m": 17,
+    "auto": 65,
+    "man": 69,
+    "rec": [
+      1252,
+      1252,
+      1252
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "스파_서울_노원구",
     "name": "스파",
-    "address": "서울 노원구 동일로 1493 상계주공아파트(10단지) 주공10단지종합상가111",
+    "addr": "서울 노원구 동일로 1493 상계주공아파트(10단지) 주공10단지종합상가111",
     "lat": 37.66166,
     "lng": 127.05787,
-    "region": "서울",
-    "sigungu": "노원구",
-    "count_1st": 53,
-    "auto_count": 41,
-    "manual_count": 10,
-    "semi_auto_count": 2,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "노원구",
+    "cnt": 53,
+    "c1y": 5,
+    "c6m": 4,
+    "c3m": 1,
+    "auto": 41,
+    "man": 10,
+    "rec": [
       1249,
       1237,
-      1234,
-      1230,
-      1220
+      1234
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "부일카서비스_부산_동구",
     "name": "부일카서비스",
-    "address": "부산 동구 자성로133번길 35",
+    "addr": "부산 동구 자성로133번길 35",
     "lat": 35.140015,
     "lng": 129.06306,
-    "region": "부산",
-    "sigungu": "동구",
-    "count_1st": 51,
-    "auto_count": 36,
-    "manual_count": 12,
-    "semi_auto_count": 3,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "동구",
+    "cnt": 51,
+    "c1y": 3,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 36,
+    "man": 12,
+    "rec": [
       1251,
       1210,
-      1205,
-      1188,
-      1147
+      1205
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "로또명당인주점_충남_아산시",
     "name": "로또명당인주점",
-    "address": "충남 아산시 서해로 519-2",
+    "addr": "충남 아산시 서해로 519-2",
     "lat": 36.87784,
     "lng": 126.89828,
-    "region": "충남",
-    "sigungu": "아산시",
-    "count_1st": 34,
-    "auto_count": 29,
-    "manual_count": 5,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "아산시",
+    "cnt": 34,
+    "c1y": 3,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 29,
+    "man": 5,
+    "rec": [
       1235,
       1206,
-      1204,
-      1180,
-      1165
+      1204
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "일등복권편의점_대구_달서구",
     "name": "일등복권편의점",
-    "address": "대구 달서구 대명천로 220 1층",
+    "addr": "대구 달서구 대명천로 220 1층",
     "lat": 35.84214,
     "lng": 128.53621,
-    "region": "대구",
-    "sigungu": "달서구",
-    "count_1st": 31,
-    "auto_count": 26,
-    "manual_count": 4,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "달서구",
+    "cnt": 31,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 26,
+    "man": 4,
+    "rec": [
       1237,
       1223,
-      1188,
-      1093,
-      1068
+      1188
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "뉴빅마트_부산_기장군",
     "name": "뉴빅마트",
-    "address": "부산 기장군 정관중앙로 48 106호",
+    "addr": "부산 기장군 정관중앙로 48 106호",
     "lat": 35.321114,
     "lng": 129.17929,
-    "region": "부산",
-    "sigungu": "기장군",
-    "count_1st": 30,
-    "auto_count": 13,
-    "manual_count": 16,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "기장군",
+    "cnt": 30,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 13,
+    "man": 16,
+    "rec": [
       1196,
       1185,
-      1181,
-      1181,
       1181
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "로또휴게실_경기_용인시",
     "name": "로또휴게실",
-    "address": "경기 용인시 기흥구 용구대로 1885",
+    "addr": "경기 용인시 기흥구 용구대로 1885",
     "lat": 37.256386,
     "lng": 127.10432,
-    "region": "경기",
-    "sigungu": "용인시",
-    "count_1st": 27,
-    "auto_count": 19,
-    "manual_count": 8,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "용인시",
+    "cnt": 27,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 19,
+    "man": 8,
+    "rec": [
       1209,
       1183,
-      1128,
-      1106,
-      1085
+      1128
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "잠실매점_서울_송파구",
     "name": "잠실매점",
-    "address": "서울 송파구 올림픽로 269 잠실역 8번출구 앞 가판",
+    "addr": "서울 송파구 올림픽로 269 잠실역 8번출구 앞 가판",
     "lat": 37.514446,
     "lng": 127.10071,
-    "region": "서울",
-    "sigungu": "송파구",
-    "count_1st": 22,
-    "auto_count": 19,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "송파구",
+    "cnt": 22,
+    "c1y": 2,
+    "c6m": 2,
+    "c3m": 2,
+    "auto": 19,
+    "man": 3,
+    "rec": [
       1250,
       1240,
-      1181,
-      1106,
-      1087
+      1181
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "목화휴게소_경남_사천시",
     "name": "목화휴게소",
-    "address": "경남 사천시 사천대로 912",
+    "addr": "경남 사천시 사천대로 912",
     "lat": 35.0018,
     "lng": 128.05415,
-    "region": "경남",
-    "sigungu": "사천시",
-    "count_1st": 22,
-    "auto_count": 21,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경남",
+    "sig": "사천시",
+    "cnt": 22,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 21,
+    "man": 1,
+    "rec": [
       1238,
       1222,
-      1189,
-      1128,
-      1037
+      1189
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "세진전자통신_대구_서구",
     "name": "세진전자통신",
-    "address": "대구 서구 서대구로 156",
+    "addr": "대구 서구 서대구로 156",
     "lat": 35.8719,
     "lng": 128.5552,
-    "region": "대구",
-    "sigungu": "서구",
-    "count_1st": 22,
-    "auto_count": 20,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "서구",
+    "cnt": 22,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 20,
+    "man": 2,
+    "rec": [
       1173,
       1112,
-      1093,
-      1070,
-      987
+      1093
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "오천억복권방_광주_서구",
     "name": "오천억복권방",
-    "address": "광주 서구 상무대로 1087",
+    "addr": "광주 서구 상무대로 1087",
     "lat": 35.15296,
     "lng": 126.880745,
-    "region": "광주",
-    "sigungu": "서구",
-    "count_1st": 20,
-    "auto_count": 15,
-    "manual_count": 5,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "광주",
+    "sig": "서구",
+    "cnt": 20,
+    "c1y": 3,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 15,
+    "man": 5,
+    "rec": [
       1222,
       1215,
-      1211,
-      1183,
-      1169
+      1211
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "알리바이_광주_광산구",
     "name": "알리바이",
-    "address": "광주 광산구 수등로 253 1층 알리바이",
+    "addr": "광주 광산구 수등로 253 1층 알리바이",
     "lat": 35.185387,
     "lng": 126.83668,
-    "region": "광주",
-    "sigungu": "광산구",
-    "count_1st": 18,
-    "auto_count": 12,
-    "manual_count": 6,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "광주",
+    "sig": "광산구",
+    "cnt": 18,
+    "c1y": 4,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 12,
+    "man": 6,
+    "rec": [
       1233,
       1214,
-      1214,
-      1209,
-      1194
+      1214
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "오케이상사_서울_서초구",
     "name": "오케이상사",
-    "address": "서울 서초구 신반포로 176 센트럴시티내100호매점",
+    "addr": "서울 서초구 신반포로 176 센트럴시티내100호매점",
     "lat": 37.504353,
     "lng": 127.00359,
-    "region": "서울",
-    "sigungu": "서초구",
-    "count_1st": 17,
-    "auto_count": 16,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "서초구",
+    "cnt": 17,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 16,
+    "man": 1,
+    "rec": [
       1219,
       1197,
-      1184,
-      1162,
-      1136
+      1184
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "천하명당복권방_경기_수원시",
     "name": "천하명당복권방",
-    "address": "경기 수원시 팔달구 매산로 2",
+    "addr": "경기 수원시 팔달구 매산로 2",
     "lat": 37.26661,
     "lng": 127.00185,
-    "region": "경기",
-    "sigungu": "수원시",
-    "count_1st": 17,
-    "auto_count": 11,
-    "manual_count": 5,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "수원시",
+    "cnt": 17,
+    "c1y": 3,
+    "c6m": 3,
+    "c3m": 0,
+    "auto": 11,
+    "man": 5,
+    "rec": [
       1239,
       1238,
-      1233,
-      1189,
-      1107
+      1233
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "제이복권방_서울_종로구",
     "name": "제이복권방",
-    "address": "서울 종로구 종로 225-1 평창빌딩 1층 103호",
+    "addr": "서울 종로구 종로 225-1 평창빌딩 1층 103호",
     "lat": 37.571293,
     "lng": 127.00283,
-    "region": "서울",
-    "sigungu": "종로구",
-    "count_1st": 16,
-    "auto_count": 9,
-    "manual_count": 7,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "종로구",
+    "cnt": 16,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 7,
+    "rec": [
       1149,
       1143,
-      1094,
-      1057,
-      1020
+      1094
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "복권백화점_경기_파주시",
     "name": "복권백화점",
-    "address": "경기 파주시 평화로 70",
+    "addr": "경기 파주시 평화로 70",
     "lat": 37.763588,
     "lng": 126.76989,
-    "region": "경기",
-    "sigungu": "파주시",
-    "count_1st": 16,
-    "auto_count": 12,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "파주시",
+    "cnt": 16,
+    "c1y": 2,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 12,
+    "man": 4,
+    "rec": [
       1217,
       1213,
-      1193,
-      1118,
-      1080
+      1193
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "복권나라_서울_관악구",
     "name": "복권나라",
-    "address": "서울 관악구 은천로 40-1",
+    "addr": "서울 관악구 은천로 40-1",
     "lat": 37.48599,
     "lng": 126.93982,
-    "region": "서울",
-    "sigungu": "관악구",
-    "count_1st": 16,
-    "auto_count": 13,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "관악구",
+    "cnt": 16,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 13,
+    "man": 3,
+    "rec": [
       1167,
       1163,
-      1142,
-      1100,
-      1070
+      1142
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "돈벼락맞는곳_부산_동구",
     "name": "돈벼락맞는곳",
-    "address": "부산 동구 조방로49번길 18-1",
+    "addr": "부산 동구 조방로49번길 18-1",
     "lat": 35.139168,
     "lng": 129.05995,
-    "region": "부산",
-    "sigungu": "동구",
-    "count_1st": 15,
-    "auto_count": 14,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "동구",
+    "cnt": 15,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 14,
+    "man": 1,
+    "rec": [
       1231,
       1190,
-      1136,
-      1102,
-      1057
+      1136
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "묵동식품_서울_중랑구",
     "name": "묵동식품",
-    "address": "서울 중랑구 동일로 919",
+    "addr": "서울 중랑구 동일로 919",
     "lat": 37.612457,
     "lng": 127.07704,
-    "region": "서울",
-    "sigungu": "중랑구",
-    "count_1st": 15,
-    "auto_count": 12,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "중랑구",
+    "cnt": 15,
+    "c1y": 3,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 12,
+    "man": 3,
+    "rec": [
       1251,
       1213,
-      1212,
-      1163,
-      1095
+      1212
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "다니엘사_경기_안산시",
     "name": "다니엘사",
-    "address": "경기 안산시 단원구 원선1로 38 두산위브아파트 101호",
+    "addr": "경기 안산시 단원구 원선1로 38 두산위브아파트 101호",
     "lat": 37.326073,
     "lng": 126.80417,
-    "region": "경기",
-    "sigungu": "안산시",
-    "count_1st": 15,
-    "auto_count": 5,
-    "manual_count": 10,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "안산시",
+    "cnt": 15,
+    "c1y": 2,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 5,
+    "man": 10,
+    "rec": [
       1210,
       1210,
-      1160,
-      1159,
-      1159
+      1160
     ],
-    "grade": "다이아"
+    "grd": "다이아"
   },
   {
     "id": "영화유통(1등복권방)_울산_남구",
     "name": "영화유통(1등복권방)",
-    "address": "울산 남구 신정로 19 삼성아파트 상가 204-101",
+    "addr": "울산 남구 신정로 19 삼성아파트 상가 204-101",
     "lat": 35.533833,
     "lng": 129.32205,
-    "region": "울산",
-    "sigungu": "남구",
-    "count_1st": 14,
-    "auto_count": 13,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "울산",
+    "sig": "남구",
+    "cnt": 14,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 13,
+    "man": 1,
+    "rec": [
       1189,
       1144,
-      1102,
-      1065,
-      1060
+      1102
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "행운복권방_경기_포천시",
     "name": "행운복권방",
-    "address": "경기 포천시 솔모루로 86-1",
+    "addr": "경기 포천시 솔모루로 86-1",
     "lat": 37.8288,
     "lng": 127.14748,
-    "region": "경기",
-    "sigungu": "포천시",
-    "count_1st": 13,
-    "auto_count": 9,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "포천시",
+    "cnt": 13,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 3,
+    "rec": [
       1184,
       1019,
-      1006,
-      924,
-      736
+      1006
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "알리바이(나주점)_전남_나주시",
     "name": "알리바이(나주점)",
-    "address": "전남 나주시 나주로 142 알리바이",
+    "addr": "전남 나주시 나주로 142 알리바이",
     "lat": 35.031338,
     "lng": 126.71719,
-    "region": "전남",
-    "sigungu": "나주시",
-    "count_1st": 13,
-    "auto_count": 9,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "전남",
+    "sig": "나주시",
+    "cnt": 13,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 3,
+    "rec": [
       1139,
       1138,
-      1039,
-      1039,
-      950
+      1039
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "행운복권방 보생당건강원_전북_익산시",
     "name": "행운복권방 보생당건강원",
-    "address": "전북 익산시 무왕로 1268",
+    "addr": "전북 익산시 무왕로 1268",
     "lat": 35.960304,
     "lng": 126.99727,
-    "region": "전북",
-    "sigungu": "익산시",
-    "count_1st": 13,
-    "auto_count": 12,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "전북",
+    "sig": "익산시",
+    "cnt": 13,
+    "c1y": 2,
+    "c6m": 2,
+    "c3m": 1,
+    "auto": 12,
+    "man": 1,
+    "rec": [
       1240,
       1232,
-      1186,
-      1086,
-      1050
+      1186
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "썬마트_충북_청주시",
     "name": "썬마트",
-    "address": "충북 청주시 흥덕구 진재로23번길 25",
+    "addr": "충북 청주시 흥덕구 진재로23번길 25",
     "lat": 36.632607,
     "lng": 127.42811,
-    "region": "충북",
-    "sigungu": "청주시",
-    "count_1st": 13,
-    "auto_count": 6,
-    "manual_count": 7,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충북",
+    "sig": "청주시",
+    "cnt": 13,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 7,
+    "rec": [
       1204,
       1140,
-      1055,
-      999,
-      947
+      1055
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "대박천하마트_인천_부평구",
     "name": "대박천하마트",
-    "address": "인천 부평구 굴포로 48",
+    "addr": "인천 부평구 굴포로 48",
     "lat": 37.51157,
     "lng": 126.72634,
-    "region": "인천",
-    "sigungu": "부평구",
-    "count_1st": 13,
-    "auto_count": 11,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "인천",
+    "sig": "부평구",
+    "cnt": 13,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 11,
+    "man": 2,
+    "rec": [
       1243,
       1170,
-      1125,
-      1122,
-      1115
+      1125
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "복권명당(서부점)_대구_달서구",
     "name": "복권명당(서부점)",
-    "address": "대구 달서구 월배로 452",
+    "addr": "대구 달서구 월배로 452",
     "lat": 35.833633,
     "lng": 128.55486,
-    "region": "대구",
-    "sigungu": "달서구",
-    "count_1st": 13,
-    "auto_count": 7,
-    "manual_count": 6,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "달서구",
+    "cnt": 13,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 7,
+    "man": 6,
+    "rec": [
       1227,
       1218,
-      1090,
-      952,
-      941
+      1090
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "천하명당복권_대구_북구",
     "name": "천하명당복권",
-    "address": "대구 북구 칠곡중앙대로 545",
+    "addr": "대구 북구 칠곡중앙대로 545",
     "lat": 35.94432,
     "lng": 128.55064,
-    "region": "대구",
-    "sigungu": "북구",
-    "count_1st": 13,
-    "auto_count": 9,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "북구",
+    "cnt": 13,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 4,
+    "rec": [
       1221,
       1160,
-      1123,
-      1119,
-      1107
+      1123
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "버스판매소_서울_영등포구",
     "name": "버스판매소",
-    "address": "서울 영등포구 영중로 2 1층(영등포동3가)",
+    "addr": "서울 영등포구 영중로 2 1층(영등포동3가)",
     "lat": 37.516743,
     "lng": 126.906746,
-    "region": "서울",
-    "sigungu": "영등포구",
-    "count_1st": 13,
-    "auto_count": 11,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "영등포구",
+    "cnt": 13,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 11,
+    "man": 2,
+    "rec": [
       954,
       947,
-      932,
-      921,
-      738
+      932
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "한꿈복권방_울산_중구",
     "name": "한꿈복권방",
-    "address": "울산 중구 번영로 586",
+    "addr": "울산 중구 번영로 586",
     "lat": 35.568794,
     "lng": 129.34589,
-    "region": "울산",
-    "sigungu": "중구",
-    "count_1st": 12,
-    "auto_count": 10,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "울산",
+    "sig": "중구",
+    "cnt": 12,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 10,
+    "man": 2,
+    "rec": [
       1223,
       1160,
-      1155,
-      1143,
-      1094
+      1155
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "종합복권슈퍼_경기_시흥시",
     "name": "종합복권슈퍼",
-    "address": "경기 시흥시 마유로 336 정일빌딩104",
+    "addr": "경기 시흥시 마유로 336 정일빌딩104",
     "lat": 37.34572,
     "lng": 126.73561,
-    "region": "경기",
-    "sigungu": "시흥시",
-    "count_1st": 12,
-    "auto_count": 8,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "시흥시",
+    "cnt": 12,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 8,
+    "man": 3,
+    "rec": [
       1234,
       1168,
-      1164,
-      1161,
-      1161
+      1164
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "메트로센터점_대구_중구",
     "name": "메트로센터점",
-    "address": "대구 중구 달구벌대로 지하 2100 메트로센터C412호",
+    "addr": "대구 중구 달구벌대로 지하 2100 메트로센터C412호",
     "lat": 35.86582,
     "lng": 128.59314,
-    "region": "대구",
-    "sigungu": "중구",
-    "count_1st": 12,
-    "auto_count": 8,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "중구",
+    "cnt": 12,
+    "c1y": 3,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 8,
+    "man": 4,
+    "rec": [
       1240,
       1223,
-      1213,
-      1193,
-      1191
+      1213
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "대박마트복권방_충남_아산시",
     "name": "대박마트복권방",
-    "address": "충남 아산시 음봉로 844 행복한순복음교회 태화상가1층103호",
+    "addr": "충남 아산시 음봉로 844 행복한순복음교회 태화상가1층103호",
     "lat": 36.826508,
     "lng": 127.09927,
-    "region": "충남",
-    "sigungu": "아산시",
-    "count_1st": 12,
-    "auto_count": 8,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "아산시",
+    "cnt": 12,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 8,
+    "man": 3,
+    "rec": [
       1241,
       1204,
-      1178,
-      1150,
-      1118
+      1178
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "종합가판점_서울_동대문구",
     "name": "종합가판점",
-    "address": "서울 동대문구 왕산로40길 6 건물 앞쪽 가판점 청량리역 5번출구 앞쪽",
+    "addr": "서울 동대문구 왕산로40길 6 건물 앞쪽 가판점 청량리역 5번출구 앞쪽",
     "lat": 37.579697,
     "lng": 127.04497,
-    "region": "서울",
-    "sigungu": "동대문구",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "동대문구",
+    "cnt": 11,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1234,
       1133,
-      1071,
-      1019,
-      870
+      1071
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "노다지복권방_경기_용인시",
     "name": "노다지복권방",
-    "address": "경기 용인시 처인구 금령로 130",
+    "addr": "경기 용인시 처인구 금령로 130",
     "lat": 37.23509,
     "lng": 127.2105,
-    "region": "경기",
-    "sigungu": "용인시",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "용인시",
+    "cnt": 11,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1152,
       1121,
-      1019,
-      972,
-      938
+      1019
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "로또킹_서울_영등포구",
     "name": "로또킹",
-    "address": "서울 영등포구 영중로 2 1층(영등포동3가)",
+    "addr": "서울 영등포구 영중로 2 1층(영등포동3가)",
     "lat": 37.516743,
     "lng": 126.906746,
-    "region": "서울",
-    "sigungu": "영등포구",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "영등포구",
+    "cnt": 11,
+    "c1y": 4,
+    "c6m": 2,
+    "c3m": 1,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1248,
       1229,
-      1222,
-      1206,
-      1192
+      1222
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "행복충전소_경기_평택시",
     "name": "행복충전소",
-    "address": "경기 평택시 탄현로 332-2",
+    "addr": "경기 평택시 탄현로 332-2",
     "lat": 37.0818,
     "lng": 127.05637,
-    "region": "경기",
-    "sigungu": "평택시",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "평택시",
+    "cnt": 11,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1240,
       1210,
-      1027,
-      869,
-      768
+      1027
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "현대장미슈퍼_전북_익산시",
     "name": "현대장미슈퍼",
-    "address": "전북 익산시 동서로61길 41 현대아파트1층108호",
+    "addr": "전북 익산시 동서로61길 41 현대아파트1층108호",
     "lat": 35.95509,
     "lng": 126.98032,
-    "region": "전북",
-    "sigungu": "익산시",
-    "count_1st": 11,
-    "auto_count": 8,
-    "manual_count": 2,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "전북",
+    "sig": "익산시",
+    "cnt": 11,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 8,
+    "man": 2,
+    "rec": [
       1251,
       1108,
-      1103,
-      1101,
-      1080
+      1103
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "라이프마트_인천_중구",
     "name": "라이프마트",
-    "address": "인천 중구 연안부두로53번길 36 5호",
+    "addr": "인천 중구 연안부두로53번길 36 5호",
     "lat": 37.45236,
     "lng": 126.60402,
-    "region": "인천",
-    "sigungu": "중구",
-    "count_1st": 11,
-    "auto_count": 10,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "인천",
+    "sig": "중구",
+    "cnt": 11,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 10,
+    "man": 1,
+    "rec": [
       1050,
       1039,
-      876,
-      868,
-      864
+      876
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "행복한사람들 (흥부네)_경기_광주시",
     "name": "행복한사람들 (흥부네)",
-    "address": "경기 광주시 경충대로 763",
+    "addr": "경기 광주시 경충대로 763",
     "lat": 37.355545,
     "lng": 127.325386,
-    "region": "경기",
-    "sigungu": "광주시",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 1,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "광주시",
+    "cnt": 11,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 9,
+    "man": 1,
+    "rec": [
       1249,
       1164,
-      1162,
-      1148,
-      1043
+      1162
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "버스표가판점_경기_안양시",
     "name": "버스표가판점",
-    "address": "경기 안양시 동안구 흥안대로  498-2",
+    "addr": "경기 안양시 동안구 흥안대로  498-2",
     "lat": 37.398514,
     "lng": 126.97752,
-    "region": "경기",
-    "sigungu": "안양시",
-    "count_1st": 11,
-    "auto_count": 10,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "안양시",
+    "cnt": 11,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 10,
+    "man": 1,
+    "rec": [
       1194,
       1160,
-      1056,
-      984,
-      974
+      1056
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "복권방_부산_사하구",
     "name": "복권방",
-    "address": "부산 사하구 장림번영로 25",
+    "addr": "부산 사하구 장림번영로 25",
     "lat": 35.081005,
     "lng": 128.96823,
-    "region": "부산",
-    "sigungu": "사하구",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "사하구",
+    "cnt": 11,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1221,
       1084,
-      1082,
-      1068,
-      931
+      1082
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "버스표판매소_경기_고양시",
     "name": "버스표판매소",
-    "address": "경기 고양시 덕양구 화신로 76 샘터마을1단지아파트 971번지선",
+    "addr": "경기 고양시 덕양구 화신로 76 샘터마을1단지아파트 971번지선",
     "lat": 37.619034,
     "lng": 126.840454,
-    "region": "경기",
-    "sigungu": "고양시",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "고양시",
+    "cnt": 11,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1092,
       1090,
-      947,
-      921,
-      910
+      947
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "월드24시_서울_은평구",
     "name": "월드24시",
-    "address": "서울 은평구 통일로 855-15",
+    "addr": "서울 은평구 통일로 855-15",
     "lat": 37.61925,
     "lng": 126.919785,
-    "region": "서울",
-    "sigungu": "은평구",
-    "count_1st": 11,
-    "auto_count": 9,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "은평구",
+    "cnt": 11,
+    "c1y": 2,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 2,
+    "rec": [
       1222,
       1213,
-      1098,
-      881,
-      752
+      1098
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "북마산복권전문점_경남_창원시",
     "name": "북마산복권전문점",
-    "address": "경남 창원시 마산합포구 북성로 98",
+    "addr": "경남 창원시 마산합포구 북성로 98",
     "lat": 35.215973,
     "lng": 128.5708,
-    "region": "경남",
-    "sigungu": "창원시",
-    "count_1st": 11,
-    "auto_count": 6,
-    "manual_count": 5,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경남",
+    "sig": "창원시",
+    "cnt": 11,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 5,
+    "rec": [
       1146,
       1105,
-      874,
-      848,
-      832
+      874
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "갈렙분식한식_서울_중랑구",
     "name": "갈렙분식한식",
-    "address": "서울 중랑구 용마산로115길 92",
+    "addr": "서울 중랑구 용마산로115길 92",
     "lat": 37.59823,
     "lng": 127.09528,
-    "region": "서울",
-    "sigungu": "중랑구",
-    "count_1st": 10,
-    "auto_count": 4,
-    "manual_count": 6,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "중랑구",
+    "cnt": 10,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 4,
+    "man": 6,
+    "rec": [
       1014,
       836,
-      827,
-      827,
       827
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "노다지복권방_인천_미추홀구",
     "name": "노다지복권방",
-    "address": "인천 미추홀구 한나루로 400 학익시장 외7필지125호",
+    "addr": "인천 미추홀구 한나루로 400 학익시장 외7필지125호",
     "lat": 37.443375,
     "lng": 126.66496,
-    "region": "인천",
-    "sigungu": "미추홀구",
-    "count_1st": 10,
-    "auto_count": 8,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "인천",
+    "sig": "미추홀구",
+    "cnt": 10,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 8,
+    "man": 2,
+    "rec": [
       1058,
       1051,
-      1018,
-      963,
-      945
+      1018
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "미나식품(로또판매점)_서울_강서구",
     "name": "미나식품(로또판매점)",
-    "address": "서울 강서구 금낭화로 91-12",
+    "addr": "서울 강서구 금낭화로 91-12",
     "lat": 37.5735,
     "lng": 126.81066,
-    "region": "서울",
-    "sigungu": "강서구",
-    "count_1st": 10,
-    "auto_count": 6,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "강서구",
+    "cnt": 10,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 4,
+    "rec": [
       1194,
       1193,
-      1175,
-      1150,
-      1019
+      1175
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "행운복권_경기_군포시",
     "name": "행운복권",
-    "address": "경기 군포시 대야1로 3 현대팰리스 1동",
+    "addr": "경기 군포시 대야1로 3 현대팰리스 1동",
     "lat": 37.32638,
     "lng": 126.91891,
-    "region": "경기",
-    "sigungu": "군포시",
-    "count_1st": 10,
-    "auto_count": 8,
-    "manual_count": 1,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "군포시",
+    "cnt": 10,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 8,
+    "man": 1,
+    "rec": [
       1212,
       1129,
-      1102,
-      1040,
-      1029
+      1102
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "복권전문점_인천_부평구",
     "name": "복권전문점",
-    "address": "인천 부평구 원적로 437",
+    "addr": "인천 부평구 원적로 437",
     "lat": 37.50383,
     "lng": 126.7151,
-    "region": "인천",
-    "sigungu": "부평구",
-    "count_1st": 10,
-    "auto_count": 7,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "인천",
+    "sig": "부평구",
+    "cnt": 10,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 3,
+    "rec": [
       1224,
       1113,
-      1030,
-      855,
-      777
+      1030
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "NG24_경북_칠곡군",
     "name": "NG24",
-    "address": "경북 칠곡군 북중리3길 59",
+    "addr": "경북 칠곡군 북중리3길 59",
     "lat": 36.079823,
     "lng": 128.41183,
-    "region": "경북",
-    "sigungu": "칠곡군",
-    "count_1st": 10,
-    "auto_count": 7,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경북",
+    "sig": "칠곡군",
+    "cnt": 10,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 3,
+    "rec": [
       1170,
       1166,
-      1055,
-      1038,
-      838
+      1055
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "대산슈퍼_충남_천안시",
     "name": "대산슈퍼",
-    "address": "충남 천안시 동남구 복구정3길 1",
+    "addr": "충남 천안시 동남구 복구정3길 1",
     "lat": 36.76989,
     "lng": 127.250206,
-    "region": "충남",
-    "sigungu": "천안시",
-    "count_1st": 10,
-    "auto_count": 6,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "천안시",
+    "cnt": 10,
+    "c1y": 3,
+    "c6m": 2,
+    "c3m": 0,
+    "auto": 6,
+    "man": 4,
+    "rec": [
       1234,
       1234,
-      1207,
-      1173,
-      1165
+      1207
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "성심상회_경북_포항시",
     "name": "성심상회",
-    "address": "경북 포항시 북구 불종로 78",
+    "addr": "경북 포항시 북구 불종로 78",
     "lat": 36.038174,
     "lng": 129.36801,
-    "region": "경북",
-    "sigungu": "포항시",
-    "count_1st": 10,
-    "auto_count": 8,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경북",
+    "sig": "포항시",
+    "cnt": 10,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 8,
+    "man": 2,
+    "rec": [
       1238,
       1219,
-      1196,
-      1111,
-      1053
+      1196
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "흥건슈퍼_전북_전주시",
     "name": "흥건슈퍼",
-    "address": "전북 전주시 완산구 거마평로 25 흥건1차아파트상가 흥건슈퍼",
+    "addr": "전북 전주시 완산구 거마평로 25 흥건1차아파트상가 흥건슈퍼",
     "lat": 35.794403,
     "lng": 127.11578,
-    "region": "전북",
-    "sigungu": "전주시",
-    "count_1st": 10,
-    "auto_count": 8,
-    "manual_count": 0,
-    "semi_auto_count": 2,
-    "recent_draws": [
+    "reg": "전북",
+    "sig": "전주시",
+    "cnt": 10,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 8,
+    "man": 0,
+    "rec": [
       1221,
       1179,
-      1176,
-      1120,
-      1092
+      1176
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "로또복권두정점_충남_천안시",
     "name": "로또복권두정점",
-    "address": "충남 천안시 서북구 두정로 251 대원빌딩104호",
+    "addr": "충남 천안시 서북구 두정로 251 대원빌딩104호",
     "lat": 36.833515,
     "lng": 127.14499,
-    "region": "충남",
-    "sigungu": "천안시",
-    "count_1st": 10,
-    "auto_count": 7,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "천안시",
+    "cnt": 10,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 3,
+    "rec": [
       1209,
       1172,
-      1163,
-      1100,
-      1085
+      1163
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "보람복권방_울산_남구",
     "name": "보람복권방",
-    "address": "울산 남구 화합로194번길 18-1 18-1",
+    "addr": "울산 남구 화합로194번길 18-1 18-1",
     "lat": 35.54182,
     "lng": 129.33974,
-    "region": "울산",
-    "sigungu": "남구",
-    "count_1st": 10,
-    "auto_count": 6,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "울산",
+    "sig": "남구",
+    "cnt": 10,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 6,
+    "man": 4,
+    "rec": [
       1243,
       1226,
-      1175,
-      1119,
-      1109
+      1175
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "올인(allin)_경기_화성시",
     "name": "올인(allin)",
-    "address": "경기 화성시 3.1만세로 1147",
+    "addr": "경기 화성시 3.1만세로 1147",
     "lat": 37.135284,
     "lng": 126.910614,
-    "region": "경기",
-    "sigungu": "화성시",
-    "count_1st": 10,
-    "auto_count": 6,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "화성시",
+    "cnt": 10,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 4,
+    "rec": [
       1119,
       938,
-      678,
-      646,
-      595
+      678
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "복권전문점_경기_시흥시",
     "name": "복권전문점",
-    "address": "경기 시흥시 중심상가로 323",
+    "addr": "경기 시흥시 중심상가로 323",
     "lat": 37.337162,
     "lng": 126.748276,
-    "region": "경기",
-    "sigungu": "시흥시",
-    "count_1st": 10,
-    "auto_count": 4,
-    "manual_count": 6,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "시흥시",
+    "cnt": 10,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 4,
+    "man": 6,
+    "rec": [
       1241,
       1215,
-      1152,
-      1152,
       1152
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "또또복권방_전북_익산시",
     "name": "또또복권방",
-    "address": "전북 익산시 고봉로32길 3",
+    "addr": "전북 익산시 고봉로32길 3",
     "lat": 35.95982,
     "lng": 126.971695,
-    "region": "전북",
-    "sigungu": "익산시",
-    "count_1st": 10,
-    "auto_count": 6,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "전북",
+    "sig": "익산시",
+    "cnt": 10,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 3,
+    "rec": [
       1152,
       956,
-      906,
-      872,
-      858
+      906
     ],
-    "grade": "골드"
+    "grd": "골드"
   },
   {
     "id": "빅세일복권방_부산_부산진구",
     "name": "빅세일복권방",
-    "address": "부산 부산진구 서면문화로 6",
+    "addr": "부산 부산진구 서면문화로 6",
     "lat": 35.158302,
     "lng": 129.05809,
-    "region": "부산",
-    "sigungu": "부산진구",
-    "count_1st": 9,
-    "auto_count": 5,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "부산진구",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 5,
+    "man": 4,
+    "rec": [
       1244,
       1181,
-      1151,
-      1118,
-      1080
+      1151
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "천하명당복권방_충남_홍성군",
     "name": "천하명당복권방",
-    "address": "충남 홍성군 조양로 180",
+    "addr": "충남 홍성군 조양로 180",
     "lat": 36.60072,
     "lng": 126.66951,
-    "region": "충남",
-    "sigungu": "홍성군",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "홍성군",
+    "cnt": 9,
+    "c1y": 2,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1251,
       1210,
-      1140,
-      1004,
-      917
+      1140
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "천하명당복권방_경남_거제시",
     "name": "천하명당복권방",
-    "address": "경남 거제시 옥포성안로 60",
+    "addr": "경남 거제시 옥포성안로 60",
     "lat": 34.891693,
     "lng": 128.69492,
-    "region": "경남",
-    "sigungu": "거제시",
-    "count_1st": 9,
-    "auto_count": 5,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경남",
+    "sig": "거제시",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 5,
+    "man": 3,
+    "rec": [
       1172,
       1125,
-      1110,
-      1043,
-      1005
+      1110
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "북문복권방_경기_수원시",
     "name": "북문복권방",
-    "address": "경기 수원시 장안구 정조로 927-1",
+    "addr": "경기 수원시 장안구 정조로 927-1",
     "lat": 37.29028,
     "lng": 127.01279,
-    "region": "경기",
-    "sigungu": "수원시",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "수원시",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1236,
       1057,
-      1055,
-      1006,
-      922
+      1055
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "복권명당_대구_수성구",
     "name": "복권명당",
-    "address": "대구 수성구 천을로 180 동서1차아파트상가108-112호",
+    "addr": "대구 수성구 천을로 180 동서1차아파트상가108-112호",
     "lat": 35.842495,
     "lng": 128.71007,
-    "region": "대구",
-    "sigungu": "수성구",
-    "count_1st": 9,
-    "auto_count": 3,
-    "manual_count": 5,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "수성구",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 3,
+    "man": 5,
+    "rec": [
       1227,
       1007,
-      986,
-      950,
-      947
+      986
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "팡팡복권마트.잡화슈퍼_전북_전주시",
     "name": "팡팡복권마트.잡화슈퍼",
-    "address": "전북 전주시 덕진구 가리내로 26",
+    "addr": "전북 전주시 덕진구 가리내로 26",
     "lat": 35.834366,
     "lng": 127.13327,
-    "region": "전북",
-    "sigungu": "전주시",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "전북",
+    "sig": "전주시",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       1178,
       1087,
-      1027,
-      812,
-      780
+      1027
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "김포로또_경기_김포시",
     "name": "김포로또",
-    "address": "경기 김포시 돌문로 48 한솔프라자101",
+    "addr": "경기 김포시 돌문로 48 한솔프라자101",
     "lat": 37.619404,
     "lng": 126.71802,
-    "region": "경기",
-    "sigungu": "김포시",
-    "count_1st": 9,
-    "auto_count": 9,
-    "manual_count": 0,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "김포시",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 0,
+    "rec": [
       1046,
       1030,
-      757,
-      749,
-      682
+      757
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "행운복권방_서울_은평구",
     "name": "행운복권방",
-    "address": "서울 은평구 서오릉로 10,(녹번동)",
+    "addr": "서울 은평구 서오릉로 10,(녹번동)",
     "lat": 37.602295,
     "lng": 126.92678,
-    "region": "서울",
-    "sigungu": "은평구",
-    "count_1st": 9,
-    "auto_count": 4,
-    "manual_count": 4,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "은평구",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 4,
+    "man": 4,
+    "rec": [
       1173,
       1134,
-      1033,
-      868,
-      784
+      1033
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "복권명당_대구_동구",
     "name": "복권명당",
-    "address": "대구 동구 동촌로 36",
+    "addr": "대구 동구 동촌로 36",
     "lat": 35.890057,
     "lng": 128.64676,
-    "region": "대구",
-    "sigungu": "동구",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "동구",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1159,
       1050,
-      905,
-      825,
-      503
+      905
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "노다지복권방_경기_시흥시",
     "name": "노다지복권방",
-    "address": "경기 시흥시 복지로 103-1 1층상가",
+    "addr": "경기 시흥시 복지로 103-1 1층상가",
     "lat": 37.44823,
     "lng": 126.79206,
-    "region": "경기",
-    "sigungu": "시흥시",
-    "count_1st": 9,
-    "auto_count": 9,
-    "manual_count": 0,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "시흥시",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 9,
+    "man": 0,
+    "rec": [
       1212,
       1104,
-      1087,
-      1058,
-      927
+      1087
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "주택복권방_경기_용인시",
     "name": "주택복권방",
-    "address": "경기 용인시 수지구 풍덕천로 144-1 103호",
+    "addr": "경기 용인시 수지구 풍덕천로 144-1 103호",
     "lat": 37.323883,
     "lng": 127.09745,
-    "region": "경기",
-    "sigungu": "용인시",
-    "count_1st": 9,
-    "auto_count": 5,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "용인시",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 5,
+    "man": 4,
+    "rec": [
       1195,
       1163,
-      1106,
-      1086,
-      1069
+      1106
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "명당골복권방_경기_수원시",
     "name": "명당골복권방",
-    "address": "경기 수원시 권선구 동수원로242번길 15 104호",
+    "addr": "경기 수원시 권선구 동수원로242번길 15 104호",
     "lat": 37.251095,
     "lng": 127.03546,
-    "region": "경기",
-    "sigungu": "수원시",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "수원시",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1108,
       1072,
-      923,
-      825,
-      825
+      923
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "왕대박복권방_경북_문경시",
     "name": "왕대박복권방",
-    "address": "경북 문경시 중앙로 15,(모전동)",
+    "addr": "경북 문경시 중앙로 15,(모전동)",
     "lat": 36.588123,
     "lng": 128.19293,
-    "region": "경북",
-    "sigungu": "문경시",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경북",
+    "sig": "문경시",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1210,
       1153,
-      1072,
-      949,
-      881
+      1072
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "영광정보통신_서울_성북구",
     "name": "영광정보통신",
-    "address": "서울 성북구 화랑로 92 1층 우측1호",
+    "addr": "서울 성북구 화랑로 92 1층 우측1호",
     "lat": 37.602676,
     "lng": 127.0425,
-    "region": "서울",
-    "sigungu": "성북구",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "성북구",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1073,
       875,
-      845,
-      636,
-      553
+      845
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "공원슈퍼_경기_수원시",
     "name": "공원슈퍼",
-    "address": "경기 수원시 장안구 팔달로 255 1층(영화동)",
+    "addr": "경기 수원시 장안구 팔달로 255 1층(영화동)",
     "lat": 37.28874,
     "lng": 127.01298,
-    "region": "경기",
-    "sigungu": "수원시",
-    "count_1st": 9,
-    "auto_count": 8,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "수원시",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 8,
+    "man": 1,
+    "rec": [
       1210,
       1170,
-      1080,
-      993,
-      986
+      1080
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "종로3가1호선역2번출구가로판매점82호_서울_종로구",
     "name": "종로3가1호선역2번출구가로판매점82호",
-    "address": "서울 종로구 돈화문로 23 가판",
+    "addr": "서울 종로구 돈화문로 23 가판",
     "lat": 37.5707,
     "lng": 126.991875,
-    "region": "서울",
-    "sigungu": "종로구",
-    "count_1st": 9,
-    "auto_count": 6,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "종로구",
+    "cnt": 9,
+    "c1y": 2,
+    "c6m": 2,
+    "c3m": 0,
+    "auto": 6,
+    "man": 3,
+    "rec": [
       1238,
       1238,
-      1194,
-      1153,
-      1088
+      1194
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "이마트24 순천산단점_전남_순천시",
     "name": "이마트24 순천산단점",
-    "address": "전남 순천시 산단1길 6 중앙정밀기계,마트",
+    "addr": "전남 순천시 산단1길 6 중앙정밀기계,마트",
     "lat": 34.987934,
     "lng": 127.50839,
-    "region": "전남",
-    "sigungu": "순천시",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "전남",
+    "sig": "순천시",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 0,
+    "auto": 7,
+    "man": 2,
+    "rec": [
       1229,
       1150,
-      1145,
-      1098,
-      1092
+      1145
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "행운복권방_경기_의정부시",
     "name": "행운복권방",
-    "address": "경기 의정부시 충의로 55",
+    "addr": "경기 의정부시 충의로 55",
     "lat": 37.73674,
     "lng": 127.08712,
-    "region": "경기",
-    "sigungu": "의정부시",
-    "count_1st": 9,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "의정부시",
+    "cnt": 9,
+    "c1y": 2,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       1207,
       1203,
-      1128,
-      1093,
-      1093
+      1128
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "대광복권방_전남_화순군",
     "name": "대광복권방",
-    "address": "전남 화순군 칠충로 55 대광그린상가동 1층109호",
+    "addr": "전남 화순군 칠충로 55 대광그린상가동 1층109호",
     "lat": 35.05548,
     "lng": 126.97712,
-    "region": "전남",
-    "sigungu": "화순군",
-    "count_1st": 9,
-    "auto_count": 5,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "전남",
+    "sig": "화순군",
+    "cnt": 9,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 5,
+    "man": 4,
+    "rec": [
       1174,
       1158,
-      1140,
-      948,
-      876
+      1140
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "서재강변로또_대구_달성군",
     "name": "서재강변로또",
-    "address": "대구 달성군 서재로 172",
+    "addr": "대구 달성군 서재로 172",
     "lat": 35.878708,
     "lng": 128.49748,
-    "region": "대구",
-    "sigungu": "달성군",
-    "count_1st": 9,
-    "auto_count": 6,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "대구",
+    "sig": "달성군",
+    "cnt": 9,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 3,
+    "rec": [
       1220,
       1173,
-      962,
-      888,
-      861
+      962
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "서울로또방_충북_옥천군",
     "name": "서울로또방",
-    "address": "충북 옥천군 삼금로 8",
+    "addr": "충북 옥천군 삼금로 8",
     "lat": 36.29949,
     "lng": 127.56668,
-    "region": "충북",
-    "sigungu": "옥천군",
-    "count_1st": 8,
-    "auto_count": 3,
-    "manual_count": 4,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "충북",
+    "sig": "옥천군",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 3,
+    "man": 4,
+    "rec": [
       1162,
       1109,
-      1109,
-      1006,
-      942
+      1109
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "가판14호_서울_중구",
     "name": "가판14호",
-    "address": "서울 중구 퇴계로 37",
+    "addr": "서울 중구 퇴계로 37",
     "lat": 37.557816,
     "lng": 126.97671,
-    "region": "서울",
-    "sigungu": "중구",
-    "count_1st": 8,
-    "auto_count": 6,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "중구",
+    "cnt": 8,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 2,
+    "rec": [
       1222,
       1123,
-      1067,
-      1016,
-      1016
+      1067
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "주택복권방_경기_안양시",
     "name": "주택복권방",
-    "address": "경기 안양시 동안구 흥안대로145번길 77 77",
+    "addr": "경기 안양시 동안구 흥안대로145번길 77 77",
     "lat": 37.374123,
     "lng": 126.95816,
-    "region": "경기",
-    "sigungu": "안양시",
-    "count_1st": 8,
-    "auto_count": 4,
-    "manual_count": 3,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "안양시",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 4,
+    "man": 3,
+    "rec": [
       1177,
       1119,
-      1059,
-      1020,
-      956
+      1059
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "태안로또복권방_충남_태안군",
     "name": "태안로또복권방",
-    "address": "충남 태안군 독샘로 57",
+    "addr": "충남 태안군 독샘로 57",
     "lat": 36.75318,
     "lng": 126.29935,
-    "region": "충남",
-    "sigungu": "태안군",
-    "count_1st": 8,
-    "auto_count": 6,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "태안군",
+    "cnt": 8,
+    "c1y": 2,
+    "c6m": 2,
+    "c3m": 0,
+    "auto": 6,
+    "man": 2,
+    "rec": [
       1237,
       1237,
-      1139,
-      1026,
-      688
+      1139
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "지원물산_서울_노원구",
     "name": "지원물산",
-    "address": "서울 노원구 공릉로 108,(공릉동)",
+    "addr": "서울 노원구 공릉로 108,(공릉동)",
     "lat": 37.61983,
     "lng": 127.078094,
-    "region": "서울",
-    "sigungu": "노원구",
-    "count_1st": 8,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "노원구",
+    "cnt": 8,
+    "c1y": 1,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       1212,
       1082,
-      1037,
-      841,
-      545
+      1037
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "중앙로또_경북_칠곡군",
     "name": "중앙로또",
-    "address": "경북 칠곡군 북삼로 41 복권판매점",
+    "addr": "경북 칠곡군 북삼로 41 복권판매점",
     "lat": 36.071457,
     "lng": 128.34279,
-    "region": "경북",
-    "sigungu": "칠곡군",
-    "count_1st": 8,
-    "auto_count": 1,
-    "manual_count": 7,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경북",
+    "sig": "칠곡군",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 1,
+    "man": 7,
+    "rec": [
       1116,
-      1042,
-      1042,
       1042,
       1042
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "데이앤나잇_서울_성북구",
     "name": "데이앤나잇",
-    "address": "서울 성북구 종암로 132 종암우림카이저팰리스 1층 101호",
+    "addr": "서울 성북구 종암로 132 종암우림카이저팰리스 1층 101호",
     "lat": 37.601955,
     "lng": 127.03346,
-    "region": "서울",
-    "sigungu": "성북구",
-    "count_1st": 8,
-    "auto_count": 3,
-    "manual_count": 5,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "성북구",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 3,
+    "man": 5,
+    "rec": [
       1158,
       1063,
-      817,
-      817,
       817
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "로터리편의마트_경북_포항시",
     "name": "로터리편의마트",
-    "address": "경북 포항시 북구 서동로 85 육거리",
+    "addr": "경북 포항시 북구 서동로 85 육거리",
     "lat": 36.040768,
     "lng": 129.36725,
-    "region": "경북",
-    "sigungu": "포항시",
-    "count_1st": 8,
-    "auto_count": 8,
-    "manual_count": 0,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경북",
+    "sig": "포항시",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 8,
+    "man": 0,
+    "rec": [
       1112,
       1076,
-      939,
-      664,
-      510
+      939
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "팡팡복권방_충북_진천군",
     "name": "팡팡복권방",
-    "address": "충북 진천군 장기길 102",
+    "addr": "충북 진천군 장기길 102",
     "lat": 36.990017,
     "lng": 127.445274,
-    "region": "충북",
-    "sigungu": "진천군",
-    "count_1st": 8,
-    "auto_count": 5,
-    "manual_count": 3,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충북",
+    "sig": "진천군",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 5,
+    "man": 3,
+    "rec": [
       1162,
       1098,
-      950,
-      836,
-      702
+      950
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "황실복권방_충남_천안시",
     "name": "황실복권방",
-    "address": "충남 천안시 동남구 충절로 799",
+    "addr": "충남 천안시 동남구 충절로 799",
     "lat": 36.769257,
     "lng": 127.20064,
-    "region": "충남",
-    "sigungu": "천안시",
-    "count_1st": 8,
-    "auto_count": 2,
-    "manual_count": 5,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "천안시",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 2,
+    "man": 5,
+    "rec": [
       1101,
       992,
-      901,
-      789,
-      789
+      901
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "25시슈퍼_경기_시흥시",
     "name": "25시슈퍼",
-    "address": "경기 시흥시 함송로14번길 13-17 홍익프라자1층107호",
+    "addr": "경기 시흥시 함송로14번길 13-17 홍익프라자1층107호",
     "lat": 37.362453,
     "lng": 126.72994,
-    "region": "경기",
-    "sigungu": "시흥시",
-    "count_1st": 8,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "시흥시",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       1142,
       1104,
-      925,
-      841,
-      655
+      925
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "프로토베팅샵_부산_중구",
     "name": "프로토베팅샵",
-    "address": "부산 중구 국제시장2길 5 4호",
+    "addr": "부산 중구 국제시장2길 5 4호",
     "lat": 35.099678,
     "lng": 129.0284,
-    "region": "부산",
-    "sigungu": "중구",
-    "count_1st": 8,
-    "auto_count": 4,
-    "manual_count": 4,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "중구",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 4,
+    "man": 4,
+    "rec": [
       1164,
       1141,
-      1121,
-      986,
-      824
+      1121
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "대성기획_경기_용인시",
     "name": "대성기획",
-    "address": "경기 용인시 기흥구 구성로 75-1",
+    "addr": "경기 용인시 기흥구 구성로 75-1",
     "lat": 37.29493,
     "lng": 127.1179,
-    "region": "경기",
-    "sigungu": "용인시",
-    "count_1st": 8,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경기",
+    "sig": "용인시",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       1135,
       1128,
-      947,
-      944,
-      827
+      947
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "다모아복권_서울_구로구",
     "name": "다모아복권",
-    "address": "서울 구로구 경인로19길 4",
+    "addr": "서울 구로구 경인로19길 4",
     "lat": 37.495926,
     "lng": 126.84278,
-    "region": "서울",
-    "sigungu": "구로구",
-    "count_1st": 8,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "구로구",
+    "cnt": 8,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       1246,
       1162,
-      997,
-      966,
-      860
+      997
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "평안당_서울_종로구",
     "name": "평안당",
-    "address": "서울 종로구 종로 219",
+    "addr": "서울 종로구 종로 219",
     "lat": 37.57123,
     "lng": 127.00219,
-    "region": "서울",
-    "sigungu": "종로구",
-    "count_1st": 8,
-    "auto_count": 6,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "종로구",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 6,
+    "man": 2,
+    "rec": [
       1173,
       948,
-      911,
-      767,
-      743
+      911
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "GS25(양산문성)_경남_양산시",
     "name": "GS25(양산문성)",
-    "address": "경남 양산시 웅상읍 평산리 평산리 31-5",
+    "addr": "경남 양산시 웅상읍 평산리 평산리 31-5",
     "lat": 35.384815,
     "lng": 129.15508,
-    "region": "경남",
-    "sigungu": "양산시",
-    "count_1st": 8,
-    "auto_count": 3,
-    "manual_count": 5,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "경남",
+    "sig": "양산시",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 3,
+    "man": 5,
+    "rec": [
       571,
-      327,
-      327,
       327,
       327
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "가판점(신문)_서울_영등포구",
     "name": "가판점(신문)",
-    "address": "서울 영등포구 양평로 48",
+    "addr": "서울 영등포구 양평로 48",
     "lat": 37.534508,
     "lng": 126.90126,
-    "region": "서울",
-    "sigungu": "영등포구",
-    "count_1st": 8,
-    "auto_count": 7,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "영등포구",
+    "cnt": 8,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 1,
+    "rec": [
       875,
       802,
-      718,
-      567,
-      540
+      718
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "버스매표소_인천_부평구",
     "name": "버스매표소",
-    "address": "인천 부평구 부평대로 3 가판",
+    "addr": "인천 부평구 부평대로 3 가판",
     "lat": 37.49181,
     "lng": 126.722725,
-    "region": "인천",
-    "sigungu": "부평구",
-    "count_1st": 7,
-    "auto_count": 4,
-    "manual_count": 2,
-    "semi_auto_count": 1,
-    "recent_draws": [
+    "reg": "인천",
+    "sig": "부평구",
+    "cnt": 7,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 4,
+    "man": 2,
+    "rec": [
       1159,
       1003,
-      937,
-      849,
-      755
+      937
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "G마트_서울_영등포구",
     "name": "G마트",
-    "address": "서울 영등포구 디지털로 387",
+    "addr": "서울 영등포구 디지털로 387",
     "lat": 37.491634,
     "lng": 126.902115,
-    "region": "서울",
-    "sigungu": "영등포구",
-    "count_1st": 7,
-    "auto_count": 5,
-    "manual_count": 2,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "서울",
+    "sig": "영등포구",
+    "cnt": 7,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 5,
+    "man": 2,
+    "rec": [
       1133,
       1107,
-      1021,
-      1004,
-      651
+      1021
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "대원슈퍼마켓_부산_수영구",
     "name": "대원슈퍼마켓",
-    "address": "부산 수영구 수영로 524",
+    "addr": "부산 수영구 수영로 524",
     "lat": 35.152473,
     "lng": 129.112,
-    "region": "부산",
-    "sigungu": "수영구",
-    "count_1st": 7,
-    "auto_count": 6,
-    "manual_count": 1,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "부산",
+    "sig": "수영구",
+    "cnt": 7,
+    "c1y": 1,
+    "c6m": 1,
+    "c3m": 1,
+    "auto": 6,
+    "man": 1,
+    "rec": [
       1244,
       1009,
-      969,
-      859,
-      789
+      969
     ],
-    "grade": "실버"
+    "grd": "실버"
   },
   {
     "id": "복권명당_충남_공주시",
     "name": "복권명당",
-    "address": "충남 공주시 번영1로 41",
+    "addr": "충남 공주시 번영1로 41",
     "lat": 36.471832,
     "lng": 127.13313,
-    "region": "충남",
-    "sigungu": "공주시",
-    "count_1st": 7,
-    "auto_count": 7,
-    "manual_count": 0,
-    "semi_auto_count": 0,
-    "recent_draws": [
+    "reg": "충남",
+    "sig": "공주시",
+    "cnt": 7,
+    "c1y": 0,
+    "c6m": 0,
+    "c3m": 0,
+    "auto": 7,
+    "man": 0,
+    "rec": [
       1044,
       1012,
-      825,
-      742,
-      552
+      825
     ],
-    "grade": "실버"
+    "grd": "실버"
   }
 ]
